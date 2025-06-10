@@ -45,3 +45,16 @@
   
   
 ]
+
+
+=== Une équation symétrique ? - $mushroom$
+
+#question[
+  Déterminer toutes les fonctions de classe $cal(C)^2$ sur $[0, 1]$ à valeurs dans $RR$ telles que 
+  $ forall x in [0, 1], f(x) = 2 f(x/2) + 2 f(1 - x/2) $
+]
+
+#indic[
+  Raisonner par analyse-synthèse.
+  Dériver deux fois $f$ et montrer que $f ' '$ est constante.
+]

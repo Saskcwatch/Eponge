@@ -20,7 +20,7 @@
 ]
 
 #indic[
-  ajouter $phi'y'$ aux deux membres de $(E)$ pour se ramener à une équation différentielle d'ordre 1.
+  Ajouter $phi'y'$ aux deux membres de $(E)$ pour se ramener à une équation différentielle d'ordre 1.
 ]
 
  === Dérivée absolue - $chocolate$

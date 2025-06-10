@@ -105,7 +105,7 @@ On note $Delta_n = det ((X_(i, j))_((i,j) in eintl 1, n eintr ^2))$.
 
 
 #indic[
-  1) utiliser la formule de Leibniz
+  1) Utiliser la formule de Leibniz
 
-  2) impossible
+  2) Absolument impossible
 ]
