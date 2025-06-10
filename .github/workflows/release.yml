@@ -46,7 +46,7 @@ jobs:
         id: create_release
         # Temporarily use a specific commit of the action to avoid issues with latest
         # See https://github.com/softprops/action-gh-release/issues/628
-        uses: softprops/action-gh-release@da05d55
+        uses: softprops/action-gh-release@da05d552573ad5aba039eaac05058a918a7bf631
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
