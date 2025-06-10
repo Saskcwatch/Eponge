@@ -54,6 +54,6 @@ jobs:
             generate_release_notes: true
             target_commitish: ${{ github.sha }}
             files: |
-                eponge.pdf
-                eponge-indications.pdf
-                eponge-correction.pdf
+              eponge.pdf
+              eponge-indications.pdf
+              eponge-correction.pdf
