@@ -44,7 +44,9 @@ jobs:
         run: ls -llt
       - name: Create Release
         id: create_release
-        uses: softprops/action-gh-release@v2
+        # Temporarily use a specific commit of the action to avoid issues with latest
+        # See https://github.com/softprops/action-gh-release/issues/628
+        uses: softprops/action-gh-release@da05d55
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
