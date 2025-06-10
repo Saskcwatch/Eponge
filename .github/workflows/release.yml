@@ -1,0 +1,54 @@
+name: Create Release
+run-name: Create release '${{ github.event.head_commit.message }}'
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - '.github/**'
+  pull_request:
+    branches: [main]
+    paths-ignore:
+      - '.github/**'
+  workflow_dispatch:
+
+# Down scope as necessary via https://docs.github.com/en/actions/security-guides/automatic-token-authentication#modifying-the-permissions-for-the-github_token
+permissions:
+  checks: write
+  contents: write
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event_name == 'pull_request' && github.head_ref || github.ref }}
+  cancel-in-progress: true
+jobs:
+  compile-and-release:
+    name: Compile and release
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v4
+      - name: Install rust toolchain
+        uses: actions-rs/toolchain@v1
+      - name: Install typst
+        run: cargo install --locked typst-cli
+      - name: Compile document
+        run: |
+            typst compile main.typ eponge.pdf
+            typst compile --input show_indic=true main.typ eponge-indications.pdf
+            typst compile --input show_indic=true --input show_correction=true main.typ eponge-correction.pdf
+      - name: Create Release
+        id: create_release
+        uses: softprops/action-gh-release@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+            name: ${{ github.sha }} Release
+            tag_name: release-${{ github.sha }}
+            draft: false
+            generate_release_notes: true
+            target_commitish: ${{ github.sha }}
+            files: |
+                eponge.pdf
+                eponge-indications.pdf
+                eponge-correction.pdf

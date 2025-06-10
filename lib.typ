@@ -2,6 +2,26 @@
 #let show_question = true
 #let show_correction = false
 
+#let compile_mode = sys.inputs.at(
+  "compile_mode",
+  default: "question",
+)
+#if compile_mode == "indic" {
+  show_indic = true
+  show_question = false
+  show_correction = false
+} else if compile_mode == "correction" {
+  show_indic = false
+  show_question = false
+  show_correction = true
+} else if compile_mode == "question" {
+  show_indic = false
+  show_question = true
+  show_correction = false
+} else {
+  panic("Unknown compile mode: " + compile_mode)
+}
+
 #import emoji: (horn, tree, gorilla, baby, monkey, moyai, chocolate, hammer, ambulance, mushroom, quest)
 
 #set text(lang: "fr")
