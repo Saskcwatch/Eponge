@@ -17,6 +17,7 @@ on:
 permissions:
   checks: write
   contents: write
+  packages: write
 concurrency:
   group: ${{ github.workflow }}-${{ github.event_name == 'pull_request' && github.head_ref || github.ref }}
   cancel-in-progress: true
@@ -37,8 +38,10 @@ jobs:
       - name: Compile document
         run: |
             typst compile main.typ eponge.pdf
-            typst compile --input show_indic=true main.typ eponge-indications.pdf
-            typst compile --input show_indic=true --input show_correction=true main.typ eponge-correction.pdf
+            typst compile --input compile_mode=indic main.typ eponge-indications.pdf
+            typst compile --input compile_mode=correction main.typ eponge-correction.pdf
+      - name: Check files
+        run: ls -llt
       - name: Create Release
         id: create_release
         uses: softprops/action-gh-release@v2
