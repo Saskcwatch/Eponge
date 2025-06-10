@@ -37,7 +37,7 @@ jobs:
         run: cargo install --locked typst-cli
       - name: Compile document
         run: |
-            typst compile main.typ eponge.pdf
+            typst compile main.typ eponge-enonces.pdf
             typst compile --input compile_mode=indic main.typ eponge-indications.pdf
             typst compile --input compile_mode=correction main.typ eponge-correction.pdf
       - name: Check files
@@ -53,7 +53,4 @@ jobs:
             draft: false
             generate_release_notes: true
             target_commitish: ${{ github.sha }}
-            files: |
-              eponge.pdf
-              eponge-indications.pdf
-              eponge-correction.pdf
+            files: eponge-*.pdf
