@@ -37,3 +37,23 @@ On pourra essayer d'exprimer ce determinant sous la forme d'un produit de 2 dét
 #indic[
   Utiliser la relation de la question 1 sur $i and j$
 ]
+
+// #correction[
+  2) On a que, pour $(i, j) in  eintl 1, n eintr ^2$:
+  $
+    i and j &= sum_(d divides (i and j)) phi(d) \
+    &= sum_(d divides i, d divides j) phi(d) \
+    &= sum_(d= 1)^n phi(d) delta_(d divides i) delta_(d divides j)
+  $
+
+  On considère deux matrices:
+    $ B = (phi(i) delta_(i divides j))_((i,j) in eintl 1, n eintr ^2) $ 
+   $ A = (delta_(j divides i))_((i, j) in eintl 1, n eintr ^2) $ 
+
+  On a donc que
+  $
+    (A B)_(i, j) = sum_(k = 1)^n phi(k) delta_(k divides j) delta_(k divides i) = i and j
+  $ 
+
+  On a donc 
+// ]
