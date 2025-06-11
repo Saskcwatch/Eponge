@@ -109,3 +109,30 @@ On note $Delta_n = det ((X_(i, j))_((i,j) in eintl 1, n eintr ^2))$.
 
   2) Absolument impossible
 ]
+
+
+=== Un bon moment de probabilité - $mushroom$
+#question[
+  On se place dans un espace probabilisé fini $(Omega, PP)$.
+  Soient $X$ et $Y$ deux variables aléatoires réelles telles que $ forall n in NN, EE(X^n)=EE(Y^n) $ 
+  On supposera par convention $0^0 = 1$
+
+  Montrer que $X$ et $Y$ suivent la même loi.
+]
+
+#indic[
+  Lagrange...
+]
+
+#correction[
+  On remarque que, par linéarité de l'espérence, pour tout polynôme $P$ de $RR[X]$, $EE(P(X)) = EE(P(Y))$
+
+  En prenant $A = X(Omega) union Y(Omega)$, on a: 
+  $ EE(P(X)) = sum_(x in A) P(x) PP(X=x) quad " et " quad EE(P(Y)) = sum_(y in A) P(y) PP(Y=y) $
+
+  Pour $x in Omega$, on prend, par interpolation de Lagrange, $P$ comme étant un polynôme qui s'annule sur $Omega \\ {x}$ et tel que $P(x)=1$
+
+  Alors, $PP(X=x) = EE(P(X)) = EE(P(Y)) = PP(Y = x)$.
+
+  Ceci étant vrai pour tout $x in A$, $X$ et $Y$ suivent la même loi.
+]
