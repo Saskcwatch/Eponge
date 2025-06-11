@@ -111,7 +111,9 @@ On note $Delta_n = det ((X_(i, j))_((i,j) in eintl 1, n eintr ^2))$.
 ]
 
 
+
 === Un bon moment de probabilité - $mushroom$
+
 #question[
   On se place dans un espace probabilisé fini $(Omega, PP)$.
   Soient $X$ et $Y$ deux variables aléatoires réelles telles que $ forall n in NN, EE(X^n)=EE(Y^n) $ 

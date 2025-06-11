@@ -38,7 +38,7 @@ On pourra essayer d'exprimer ce determinant sous la forme d'un produit de 2 dét
   Utiliser la relation de la question 1 sur $i and j$
 ]
 
-// #correction[
+#correction[
   2) On a que, pour $(i, j) in  eintl 1, n eintr ^2$:
   $
     i and j &= sum_(d divides (i and j)) phi(d) \
@@ -55,5 +55,12 @@ On pourra essayer d'exprimer ce determinant sous la forme d'un produit de 2 dét
     (A B)_(i, j) = sum_(k = 1)^n phi(k) delta_(k divides j) delta_(k divides i) = i and j
   $ 
 
-  On a donc 
-// ]
+  On a donc que $A B = (i and j)_((i, j) in eintl 1, n eintr ^2)$.
+
+  On remarque que si $i > j$, $i divides.not j => delta_(i divides j) = 0$. On a donc que $A$ et $B$
+  sont triangulaires. On remarque de plus que les termes diagonaux de $B$ sont de la forme $phi(i)$ pour $i in eintl 1, n eintr$ et que
+  $A$ ne contient que des $1$. Finalement, on a que:
+  $
+    det((i and j)_((i,j) in eintl 1, n eintr ^2)) = product_(k = 1)^n phi(k)
+  $
+]
