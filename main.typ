@@ -150,3 +150,7 @@ $ cal("Bonne Chance !") $
 #include "Anal/Integration.typ"
 == Série
 #include "Anal/serie.typ"
+
+= Topologie
+== Calcul différentiel 
+#include "Topo/calcul_diff.typ"

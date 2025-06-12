@@ -8,7 +8,7 @@
   $ forall x in RR, f(f(x)) + x f(x) = 1 $
 ]
 
-#incid[
+#indic[
   On pourra s'intéresser à la valeur en $0$.
 ]
   

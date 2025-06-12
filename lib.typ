@@ -34,6 +34,7 @@
 
 #let eintr = $bracket.r.double$
 #let eintl = $bracket.l.double$
+#let grad = $arrow(nabla)$
 
 #let tmpl = c => {
   show math.equation: e => {
