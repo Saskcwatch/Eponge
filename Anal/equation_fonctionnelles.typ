@@ -7,6 +7,10 @@
   Déterminer toutes les fonctions $f$ définies sur $RR$ telles que 
   $ forall x in RR, f(f(x)) + x f(x) = 1 $
 ]
+
+#incid[
+  On pourra s'intéresser à la valeur en $0$.
+]
   
 ===  Fonctionellement dense (?) - $mushroom$
 
