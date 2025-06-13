@@ -1,6 +1,15 @@
 #import "../lib.typ": * 
 #show: tmpl
 
+#question[
+#underline[*Définitions*]
+
++ #underline[Forme quadratique]
+Soit $E$ un $KK$-espace vectoriel.
+\
+On appelle forme quadratique sur $E$ toute application de la forme $u mapsto B(u, u)$ où $B$ est une forme bilinéaire symétrique sur $E$
+
+]
 
 === Une leçon de vie importante - $chocolate$
 
