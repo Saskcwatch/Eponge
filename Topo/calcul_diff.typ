@@ -2,6 +2,7 @@
 #show: tmpl
 
 
+
 === De jolies surfaces - $mushroom$
 
 #question[
@@ -57,7 +58,13 @@
 
   \
   On distingue deux cas: 
-  - si $lambda_max <= 0$, alors $f$ est clairement toujours négative donc les maxima sont les points qui annulent $f$.
+  - si $lambda_max <= 0$, alors $f$ est clairement toujours négative:
+  Par le theorème spectrale, on a que dans une certaine base orthognormale $underline(e) = (e_1, ..., e_n)$,
+  $
+    psi(x) = sum_(k = 1)^n lambda_k angle.l e_k x angle.r ^2
+  $
+  Si tous les $lambda_k$ sont négatifs, pour $x in RR^n, psi(x) <= 0$
+  Ainsi, dans ce cas là, les maxima sont les points qui annulent $f$.
   
   - si $lambda_max > 0$, alors les points critiques avec une valeur maximale sont les vecteurs propres de $M$ unitaires associés à $lambda_"max"$
   
