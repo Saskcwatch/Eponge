@@ -59,9 +59,9 @@
   \
   On distingue deux cas: 
   - si $lambda_max <= 0$, alors $f$ est clairement toujours négative:
-  Par le theorème spectrale, on a que dans une certaine base orthognormale $underline(e) = (e_1, ..., e_n)$,
+  Par le theorème spectral, on a que dans une certaine base orthognormale $underline(e) = (e_1, ..., e_n)$,
   $
-    psi(x) = sum_(k = 1)^n lambda_k angle.l e_k x angle.r ^2
+    psi(x) = sum_(k = 1)^n lambda_k angle.l e_k, x angle.r ^2
   $
   Si tous les $lambda_k$ sont négatifs, pour $x in RR^n, psi(x) <= 0$
   Ainsi, dans ce cas là, les maxima sont les points qui annulent $f$.
