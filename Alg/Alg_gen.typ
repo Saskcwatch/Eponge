@@ -5,19 +5,21 @@
 #question[
 #underline[* Définitions *]
 
-+ #underline[Action de groupe]:
-On appelle action de groupe d'un groupe $(G, star)$ sur un ensemble $X$ une application $dot: G times X arrow.r.long X$ vérifiant :
-$ (i) & forall x in X, e dot x = x \ (i i) & forall (g, h) in G^2, g dot (h dot x) = (g star h) dot x $
+1. #underline[Action de groupe]:
+On appelle action de groupe de $(G, star)$ sur un ensemble $X$ une application $dot: G times X arrow.r.long X$ vérifiant :
+$
+(i) quad & forall x in X, e dot x = x \
+(i i) quad & forall (g, h) in G^2, g dot (h dot x) = (g star h) dot x $
 
-+ #underline[Orbite]
+2. #underline[Orbite]:
 Soient $G$ un groupe, $X$ un ensemble et $dot$ une action de groupe de $G$ sur $X$.
 On appelle orbite de $x in X$ l'ensemble $ O(x) = {g dot x; g in G} $
 
 
-#underline[Produit semi direct]
+3. #underline[Produit semi direct]:
 Soient $G, H$ deux groupes et $f$ un morphisme de $H$ dans $"Aut"(G)$.
 On appelle produit semi-direct de $G$ par $H$ relativement à $f$ l'ensemble $K = G times H$ muni de la structure de groupe :
-$(g_1, h_1) (g_2, h_2) = (g_1 f(h_1)(g_2), h_1 h_2$
+$(g_1, h_1) (g_2, h_2) = (g_1 f(h_1)(g_2), h_1 h_2)$
 
 Ce groupe est noté $G times.r_f H$ ou $G times.r H$
 

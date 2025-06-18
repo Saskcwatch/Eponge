@@ -4,7 +4,7 @@
 #question[
 #underline[*Définitions*]
 
-+ #underline[Forme quadratique]
+1. #underline[Forme quadratique]:
 Soit $E$ un $KK$-espace vectoriel.
 \
 On appelle forme quadratique sur $E$ toute application de la forme $u mapsto B(u, u)$ où $B$ est une forme bilinéaire symétrique sur $E$

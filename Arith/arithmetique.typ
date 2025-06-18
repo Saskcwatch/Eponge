@@ -3,7 +3,7 @@
 #question[
 #underline[*Définitions*]
 
-+ #underline[Indicatrice d'Euler]
+1. #underline[Indicatrice d'Euler]:
 Pour $n in NN$, on définis $phi(n) := |{d in eintl 1, n eintr | n and d = 1}|$.
 La fonction $phi$ est appellé indicatrice d'euler.
 ]

@@ -12,7 +12,7 @@
   On pourra s'intéresser à la valeur en $0$.
 ]
   
-===  Fonctionellement dense (?) - $mushroom$
+===  Fonctionellement dense - $mushroom$
 
 #question[
   Déterminer toutes les fonctions $f$ continues sur $RR$ telles que

@@ -3,7 +3,7 @@
 #question[
 #underline[* Définitions *]
 
-+ #underline[Espace projectif]:
+1. #underline[Espace projectif]:
 Pour un corps $K$, on considère la relation d'équivalence $tilde$ sur $K ^(n+1) \\ {0}$ par 
 $ a tilde b <=> exists lambda in K "tq" a = lambda b $
 
