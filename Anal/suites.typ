@@ -1,4 +1,5 @@
 #import "../lib.typ": *
+#show: tmpl
 
 === Private Joke - $mushroom monkey$
 
@@ -10,3 +11,20 @@ $
 
 Trouver les deux premiers termes du DA de $(x_n)$]
 
+=== - $chocolate$
+
+#question[
+  Pour $n in NN^*$, on prend:
+  $
+    P_n = product_(k = 0)^n (X-k)
+  $
+
+  1) Justifier que pour $n in NN*$, $P_n'$ s'annule une unique fois dans $bracket.r 0, 1 bracket.l$, on appelle $x_n$ cette racince.
+
+  2) Donner un équivalent à $(x_n)_(n >= 1)$
+  ]
+
+
+#indic[
+  Penser à un DES.
+]
