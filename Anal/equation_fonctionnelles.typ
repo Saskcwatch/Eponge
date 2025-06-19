@@ -62,3 +62,16 @@
   Raisonner par analyse-synthèse.
   Dériver deux fois $f$ et montrer que $f ' '$ est constante.
 ]
+
+=== - $mushroom$
+
+#question[
+  Trouver toutes les fonctions $f in cal(RR)$ dérivable tel que pour $x in RR$,
+  $
+    f(x)^2 + (1 + f'(x))^2 <= 1
+  $
+]
+
+#indic[
+  Borner $f$ et regarder son comportement à l'infini.
+]
