@@ -138,3 +138,66 @@ On note $Delta_n = det ((X_(i, j))_((i,j) in eintl 1, n eintr ^2))$.
 
   Ceci étant vrai pour tout $x in A$, $X$ et $Y$ suivent la même loi.
 ]
+
+=== Des dés pipés ? - $hammer$
+
+#question[
+  Peut-on construire 2 dés à $6$ faces tel que la variable aléatoire qui compte la somme des valeurs obtenus suivent une loi uniforme ?
+
+]
+
+#indic[
+  Supposer par l'absurde l'existence de ces dés, en prennant $F$ et $S$ les V.A. qui comptent les valeurs prisent par chacun des dés et en notant pour $k in eintl 1, 6 eintr$,
+  $
+    p_(k-1) = PP(F = k) \
+    q_(k-1) = PP(S = k)
+  $
+
+  Etudier
+  $
+    P = sum_(i = 0)^5 p_i X^i \
+    Q = sum_(i = 0)^5 q_i X^i
+  $
+  
+]
+
+#correction[
+  On suppose par l'absurde l'existence des ces dés. On note:
+  - $F$ et $S$ les V.A. qui correspondant au premier et au deuxième dés.
+  - Pour $k in eintl 1, 6 eintr$, $p_(k-1) := PP(F = k)$, $q_(k-1) := PP(S = k)$
+
+  On a donc par hypothèse que:
+  $
+    (F + S) sui cal(U)(eintl 2, 12 eintr)
+  $
+
+  Ainsi, pour $k in eintl 2, 12 eintr$,
+  $
+    PP(F + S = k) = 1/11
+  $
+
+  Or,
+  $
+    PP(F + S = k) &= PP(F = 1)PP(S = k - 1) + dots + PP(F = k-1)PP(S = 1) \ 
+    &= p_0 q_(k-2) + dots + p_(k - 2)q_0
+  $
+  On introduit:
+  $
+    P := sum_(i = 0)^5 p_i X^i \
+    Q := sum_(i = 0)^5 q_i X^i
+  $
+
+  On a donc que $PP(F + S = k)$ est exactement le coefficient devant $X^(k - 2)$ dans $P Q$.
+  Ainsi, comme $F + S sui cal(U)(eintl 2, 12 eintr)$,
+  $
+    P Q &= sum_(k = 0)^10 1/11 X^k \
+    &= 1/11 sum_(k = 0)^10 X^k \
+    &= 1/11 (X^11 - 1)/(X - 1)
+  $
+
+  On remarque que $P$ et $Q$ sont de degrès $5$, ainsi ils admettent tout deux au moins une racine dans $RR$, on a donc que $P Q$ aussi admet au moins une racine dans $RR$.
+  Cependant, $(X^11 - 1)/(X - 1)$ n'as de racine que dans $CC$ (les racines $11$ ème de l'unité sauf $1$).
+  Absurde ! Il est donc impossible de piper des dés a $6$ de tel sorte que la somme des valeurs suivent une loi uniforme.
+  
+]
+

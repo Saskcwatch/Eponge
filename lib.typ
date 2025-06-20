@@ -1,3 +1,4 @@
+#import "def.typ": *
 #let show_indic = false
 #let show_question = true
 #let show_correction = false
@@ -26,27 +27,8 @@
 
 #set text(lang: "fr")
 
-#let int = $integral$
 
-#let barow = $\u{27FC}$
 
-#let lrarrow = $\u{27F6}$
-
-#let eintr = $bracket.r.double$
-#let eintl = $bracket.l.double$
-#let grad = $arrow(nabla)$
-
-#let tmpl = c => {
-  show math.equation: e => {
-    show sym.lt.eq: sym.lt.eq.slant 
-    show sym.gt.eq: sym.gt.eq.slant
-    e
-  }
-  c
-}
-
-#let ln = $log$
-#let emptyset = $diameter$
 
 #let indic(body) = {
   if (show_indic) {
