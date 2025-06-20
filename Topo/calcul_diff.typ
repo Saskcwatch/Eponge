@@ -70,7 +70,7 @@
   
 
   Montrons que dans ce deuxième cas, $lambda_max / e$ est un maximum global de $f$ :
-  \ On a $f(u) limits(stretch(arrow, size: #400%))_(norm(u)->+oo) 0$ \ Donc il existe $R > 0$ tel que pour tout $x in RR^n \\ overline(B)(0_(RR^n), R)$, $f(x) <= lambda_max / 4$
+  \ On a $f(u) limits(stretch(arrow, size: #400%))_(norm(u)->+oo) 0$ \ Donc il existe $R > 0$ tel que pour tout $x in RR^n \\ overline(cal(B)(0_(RR^n), R))$, $f(x) <= lambda_max / 4$
 
   Par le théorème des bornes atteintes, $f$ admet un maximum sur $overline(cal(B)(0_(RR^n), R))$. \
   Ce maximum est un point critique de $f$, donc la valeur de ce maximum est $lambda_max / e$ et il est atteint en les vecteurs propres unitaires de $M$ associés à la valeur propre $lambda_max$.
