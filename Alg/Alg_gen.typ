@@ -174,3 +174,13 @@ $
   Il y a $(2 n)!/(2^n n!)$ manières d'étiqueter les facettes d'un hypercube de manière injective par $eintl 1; 2 n eintr$ modulo isométrie.
 ]
 
+
+=== No Lagrange ? - $mushroom$
+
+#question[
+  Montrer que $frak(A_4)$ n'admet pas de sous groupe d'ordre $6$.
+]
+
+#indic[
+  Considérer un sous groupe engendrer par un $3-"cycle"$ et une double permutation.
+]
