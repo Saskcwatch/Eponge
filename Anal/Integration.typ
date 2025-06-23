@@ -1,7 +1,7 @@
 #import "../lib.typ": *
 #show: tmpl
 
-=== Une intégrale de  Fresnel ? - $mushroom$
+=== Une intégrale de  Fresnel ? - $chocolate$
 
 #question[
 Étudier la convergence de $ integral_0^(+oo) sin(t) sin(t^2) dif t $

@@ -31,6 +31,6 @@ Montrer qu'il existe un point $Y$ différent de $O$ tel que $(accent(O A, ->), a
   On a $K(Y) in K(C(X_1)) = K(C(X_2)) = K(C(Y))$ ok!
 ]
 
-=== Beaucoup trop de cercles - $mushroom$
+=== Beaucoup trop de cercles - $chocolate$
 
 #question[Montrer qu'il est impossible de partitionner $RR^2$ en cercles de rayons strictement positifs.]

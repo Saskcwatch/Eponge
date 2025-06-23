@@ -13,7 +13,7 @@
 #question[Soient $P$ et $Q$ deux polynômes de $ZZ[X]$ premiers entre eux.
   Montrer que la suite $(P(n) and Q(n))_(n in ZZ)$ est périodique.]
 
-=== Not Five - $mushroom$
+=== Not Five - $chocolate$
 
 #question[Soit $P in ZZ[X]$, $x_1, x_2, x_3, x_4, x_5 in ZZ$ distincts tel que pour tout $i in eintl 1, 5 eintr$, $P(x_i) = 7$.
 

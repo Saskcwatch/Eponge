@@ -34,7 +34,7 @@ Montrer que, pour tout $x in E$,  la distance $d$ de $x$ à $F$ vérifie : $ d(x
   
 ]
 
-=== Des pinaillages - $hammer$
+=== Des pinaillages - $ram$
 
 #question[
 1) Montrer que $dim_QQ (RR) = oo$. 

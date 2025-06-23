@@ -93,7 +93,7 @@
   #pagebreak()]
 
 
-=== - $hammer$
+=== Determinant deterministe ? - $ram$
 
 #question[Soit $n in NN^*$ et $(X_(i, j))_((i, j) in eintl 1, n eintr^2)$ $n^2$ variables aléatoires identiquement distribuées mutuellement indépendantes.
   On note $Delta_n = det ((X_(i, j))_((i,j) in eintl 1, n eintr^2))$.
@@ -139,10 +139,10 @@
   Ceci étant vrai pour tout $x in A$, $X$ et $Y$ suivent la même loi.
 ]
 
-=== Des dés pipés ? - $hammer$
+=== Des dés pipés ? - $ram$
 
 #question[
-  Peut-on construire 2 dés à $6$ faces tels que la variable aléatoire qui compte la somme des valeurs obtenues suive une loi uniforme ?
+  Peut-on construire 2 dés à $6$ faces numérotés de $1$ à $6$ tels que la variable aléatoire qui compte la somme des valeurs obtenues suive une loi uniforme ?
 
 ]
 
@@ -199,5 +199,18 @@
   Cependant, $(X^11 - 1) / (X - 1)$ n'as de racine que dans $CC$ (les racines $11$ ème de l'unité sauf $1$).
   Absurde ! Il est donc impossible de piper des dés a $6$ de tel sorte que la somme des valeurs suivent une loi uniforme.
 
+]
+
+=== Probable irréducibilité - $hammer$
+
+#question[
+  On prend $p in cal(P)$ et on note $I_n$ la probabilité qu'un polynome tiré au hasard dans $FF_p [X]$ soit
+  irréductible, unitaire et de degrès au plus $n$.
+
+  Determiner un dévelpoement asymptotique de $I_n$ quand $n$ tend vers l'infini. 
+]
+
+#indic[
+  En notant $N_p ^n$ le nombre de polynome irrécutible unitaire de degré $n$, exprimer $N_p ^n$ a l'aide d'une convolution de Dirichlet.
 ]
 

@@ -47,7 +47,7 @@ Discuter de la convergence, et calculer :
 $ T(x,t) := sum_(n=0)^(+infinity) T_n (x) t^n quad "et" quad  U(x, t):=sum_(n=0)^(+infinity) U_n (x) t^n $
 ]
 \ \ \
-=== Fibo ? - $hammer$
+=== Fibo ? - $ram$
 
 #question[On définit la suite de fibbonacci par :
 $cases(F_0 = 0, F_1=1, forall n in NN ", " F_(n+2) = F_(n+1) + F_n)$

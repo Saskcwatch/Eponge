@@ -12,7 +12,7 @@
   On pourra s'intéresser à la valeur en $0$.
 ]
   
-===  Fonctionellement dense - $mushroom$
+===  Fonctionellement dense - $chocolate$
 
 #question[
   Déterminer toutes les fonctions $f$ continues sur $RR$ telles que
@@ -63,7 +63,7 @@
   Dériver deux fois $f$ et montrer que $f ' '$ est constante.
 ]
 
-=== - $mushroom$
+=== Inéqua$xi$on- $mushroom$
 
 #question[
   Trouver toutes les fonctions $f in cal(RR)$ dérivable tel que pour $x in RR$,

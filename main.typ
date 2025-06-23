@@ -64,6 +64,7 @@
 - $baby$ : Facile...
 - $chocolate$ : Réalisable avec peu de réflexion.
 - $mushroom$ : Commencer à réfléchir au-delà du complexe.
+- $ram$ : Reflexion strictement cruciale nescessaire.
 - $hammer$ : Une grande intuition sera utile.
 - $gorilla$ : Plusieurs après-midis amusantes garanties !
 - $moyai$ : Connaissance infinie et sang-froid à toute épreuve requis.

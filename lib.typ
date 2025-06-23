@@ -23,7 +23,7 @@
   panic("Unknown compile mode: " + compile_mode)
 }
 
-#import emoji: (horn, tree, gorilla, baby, monkey, moyai, chocolate, hammer, ambulance, mushroom, quest)
+#import emoji: (ram, horn, tree, gorilla, baby, monkey, moyai, chocolate, hammer, ambulance, mushroom, quest)
 
 #set text(lang: "fr")
 

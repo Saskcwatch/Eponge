@@ -9,6 +9,7 @@
 #let eintl = $bracket.l.double$
 #let grad = $arrow(nabla)$
 #let sui = $stretch(arrow.r.hook, size: #130%)$
+// #let ramranch = $ram$
 #let ln = $log$
 #let emptyset = $diameter$
 

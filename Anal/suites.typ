@@ -1,7 +1,7 @@
 #import "../lib.typ": *
 #show: tmpl
 
-=== Private Joke - $mushroom monkey$
+=== Private Joke - $chocolate monkey$
 
 #question[
 Soit $(x_n)_(n in NN) in RR^NN$ vérifiant pour $n in NN$:
@@ -11,7 +11,7 @@ $
 
 Trouver les deux premiers termes du DA de $(x_n)$]
 
-=== - $chocolate$
+=== OHVB - $chocolate$
 
 #question[
   Pour $n in NN^*$, on prend:

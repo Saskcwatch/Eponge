@@ -33,6 +33,7 @@ UU_oo := union.big_(n in NN) UU_n $
 
 Montrer que $UU_infinity$ est isomorphe en tant que groupe à $QQ\/ZZ$
 ]
+
 === 42 ! - $moyai$
 
 #question[
@@ -81,7 +82,6 @@ $
 
   On pourra admettre que le groupe des isométries qui fixent les facettes de $C$ est $G$.
 
-  \
   3) $ambulance$ Pour $k in eintl 1; n - 2 eintr$, calculer le nombre de manières de numéroter les $k$-faces d'un dé hypercubique de dimension $n$ de manière injective et à isométrie près.
 ]
 
