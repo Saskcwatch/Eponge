@@ -5,7 +5,29 @@
 
   1. #underline[Indicatrice d'Euler]:
   Pour $n in NN$, on définit $phi(n) := |{d in eintl 1, n eintr | n and d = 1}|$.
-  La fonction $phi$ est appellée indicatrice d'euler.
+  La fonction $phi$ est appellée indicatrice d'Euler.
+
+  2. #underline[Fonction de Möbius]:
+  Pour $n in NN^*$, on prend:
+  $
+    mu(n) := cases(1 &"si" n = 1,
+    0 &"si" n "contient un facteur premier",
+    (-1)^k &"si" n = p_1 dots p_k)
+  $
+
+  La fonction ainsi définis est appelé fonction de Möbius.
+
+  3. #underline[Symbole de Legendre]:
+  Pour $p in cal(P)$, $n in NN$, on définis le symbole de Legendre $(n/p)$ par:
+  $
+    (n/p) := cases(
+      0 &"si" a eq.triple 0 [p],
+      1 &"si" p divides.not n "et" exists k in NN\, n eq.triple k^2 [p],
+      -1 &"sinon"
+    ) 
+  $
+
+  Si $(n/p) = 1$, on dit que $n$ est un résidus quadratique modulo $p$.
 ]
 
 === Une suite de PGCD - $chocolate$
@@ -18,6 +40,21 @@
 #question[Soit $P in ZZ[X]$, $x_1, x_2, x_3, x_4, x_5 in ZZ$ distincts tel que pour tout $i in eintl 1, 5 eintr$, $P(x_i) = 7$.
 
   Montrer que pour $n in ZZ, P(n) != 5$.]
+
+=== Iversion de Möbius - $mushroom sponge$
+
+#question[
+  1) Calculer pour $n in NN^*$
+  $
+    sum_(d divides n) mu(d)
+  $
+
+  2) Soit $f, g in cal(F)(NN^*, CC)$. Montrer que les deux conditions suivantes sont équivalentes:
+  $
+    (i) quad &forall n in NN^*, quad f(n) = sum_(d divides n) g(d) \
+    (i i) quad &forall n in NN^*, quad g(n) = sum_(d divides n) mu(d) f(n/d)
+  $
+]
 
 === Determinant arithmétique - $gorilla$
 

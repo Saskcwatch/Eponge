@@ -73,6 +73,7 @@
 \
 *Types d'exercices :*
 - $monkey$ : monkey-calcul ($tilde.eq$ calcul bourrin).
+- $sponge$ : Exercice introduisant des notions / outils vraiments utils.
 
 \
 

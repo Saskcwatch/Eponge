@@ -13,7 +13,7 @@ $
 
 2. #underline[Orbite]:
 Soient $G$ un groupe, $X$ un ensemble et $dot$ une action de groupe de $G$ sur $X$.
-On appelle orbite de $x in X$ l'ensemble $ O(x) = {g dot x; g in G} $
+On appelle orbite de $x in X$ l'ensemble $ O(x) := {g dot x; g in G} $
 
 
 3. #underline[Produit semi direct]:
