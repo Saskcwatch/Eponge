@@ -86,7 +86,7 @@
   On pouura de plus traiter au moins la prémière question de l'exercice d'arithmétique sur la formule d'inversion de Möbius.
 ]
 
-#corection[
+#correction[
   Fixons $k in NN,  k > 1$
   On prend:
   $
