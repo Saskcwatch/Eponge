@@ -77,7 +77,116 @@
 
 === Zeta ?!? - $moyai$
 
-#question([Montrer que la probabilité que $2$ entiers de $NN$ soient premiers entre eux est $6 / (pi^2)$])
+#question([Montrer que la probabilité que $k > 1$ entiers de $NN$ soient premiers entre eux est $1/zeta(k)$])
+
+#indic[
+  On poura introduire $cal(D)_(h; n) := {(a_1, dots, a_k) in eintl 1, n eintr^k | forall i in eintl 1, k eintr, h divides a_i }$
+  et calucler son cardinal.
+
+  On pouura de plus traiter au moins la prémière question de l'exercice d'arithmétique sur la formule d'inversion de Möbius.
+]
+
+#corection[
+  Fixons $k in NN,  k > 1$
+  On prend:
+  $
+    cal(R)_n :=  {(a_1, dots, a_k) in eintl 1; n eintr ^k | a_1 and dots and a_k = 1} \
+    r_n := cal(R)_n / n^k
+  $
+
+  On cherche donc la limite de $(r_n)$.
+
+  On prend de plus:
+  $
+    cal(P)_n := cal(P) inter eintl 1, n eintr = {p_1, dots, p_pi(n)} \
+    cal(D)_(h; n) := {(a_1, dots, a_k) in eintl 1, n eintr ^k | forall i in eintl 1, k eintr, h divides a_i}
+  $
+
+  On recconait que:
+  $
+    cal(R)_n = inter.big_(p in cal(P)_n) overline(cal(D)_(p; n))
+  $
+
+  Ainsi,
+  $
+    overline(cal(R)_n) = union.big_(p in cal(P)_n) cal(D)_(p; n)
+  $
+
+  Or, on a que $|cal(D)_(h; n)| = floor(n/h)^k$, ainsi, par la formule du crible:
+  $
+    |overline(cal(R)_n)| &= sum_(l = 1)^pi(n) (-1)^(l + 1) sum_(1 <= i_1 < dots < i_l <= n) |inter.big_(j = 1)^l cal(D)_(p_i_j; n)| \
+    &= sum_(l = 1)^pi(n) (-1)^(l+1) sum_(1 <= i_1 < dots < i_l <= n) |cal(D)_(p_i_1dots p_i_l ; n)| \
+    &= sum_(l = 1)^pi(n) (-1)^(l+1) sum_(1 <= i_1 < dots < i_l <= n) floor(n/(p_i_1dots p_i_l))^k quad (i)
+  $
+
+  Montrons que:
+  $
+    |overline(cal(R)_n)| = n^k - sum_(d = 1)^n mu(d)floor(n/d)^k quad (i i)
+  $
+  Où $mu$ est la fonction de Möbius (voir Arithmétique).
+
+  On a d'abord que l'absence du terme en $d = 1$ (soit $p_i_1 dots p_i_l = 1$ dans $(i)$) correspond dans $(i i)$. On a ensuite que si $d in eintl 1, n eintr$, $d$ est de la forme
+  $d = p_i_1 ^r_i_1 dots p_i_l ^r_i_l$ avec $p_i_1, dots, p_i_l in cal(P)_n$. \
+  Notons que si $d$ contient un facteur carré (absent de $(i)$), alors $mu(d) = 0$ et le terme est donc absent de $(i i)$.
+  On peut donc se contenter de regarder les $d$ de la forme $d = p_i_1 dots p_i_l$ avec les $p_i_j$ tous distincts.   
+  On a donc que $mu(d) = (-1)^l$. Le signe $-$ permet donc d'avoir le $(-1)^(l+1)$. Finalement on a bien que:
+  $
+    |overline(cal(R)_n)| = sum_(l = 1)^pi(n) (-1)^(l+1) sum_(1 <= i_1 < dots < i_l <= n) floor(n/(p_i_1dots p_i_l))^k =
+    n^k - sum_(d = 1)^n mu(d)floor(n/d)^k
+  $
+
+  On a donc que:
+  $
+    |cal(R)_n| &= sum_(d = 1)^n mu(d) floor(n/d)^k \
+    r_n &= 1/n^k sum_(d = 1)^n mu(d) floor(n/d)^k
+  $
+
+  On pose:
+  $
+    s_n := sum_(d = 1)^n mu(d)/d^k
+  $
+
+  Montrons que:
+  $
+    |r_n - s_n| lim_(n --> +oo) 0
+  $
+
+  (Comment faire ?)
+
+  On conclus en calculant la limite de $(s_n)$. On a que, pour $d in NN^*, |mu(d)|<=1$, ainsi, $(s_n)$ converge absolument.
+  On note $s$ la série et on regarde $zeta(k) s$
+  $
+    zeta(k) s = (sum_(m >= 1) 1/m^k) (sum_(d >= 1) mu(d)/d^k) 
+  $
+  Comme tout converge absolument, par Fubini,
+  $
+    zeta(k) s = sum_((d, m) in NN^* ^2) mu(d)/(m d)^k 
+  $
+
+  On prend maintenant
+  $
+    cal(A) := {(a,b) in NN^* ^2 | a divides b}  $
+  $
+    phi: NN^* ^2 &earrow cal(A)  \
+         (x, y) &asarrow (x, x y)
+  $
+
+  On a que $phi$ est une bijection (on pourra expliciter la réciproque pour s'en convaincre).
+  En appliquant $phi^(-1)$ aux indice de la somme, on a donc:
+  $
+    zeta(k) s &= sum_((d, l) in NN* ^2, d divides l) mu(d)/l^k \
+    &= sum_(l >= 1) 1/l^k sum_(d divides l) mu(d) \
+    &= sum_(l >= 1) 1/l^k delta_(1, l) = 1
+  $
+
+  On a donc que $zeta(k) s = 1$, soit $s = 1/zeta(k)$. On en déduit le résultat final:
+  $
+    r_n lim_(n --> +oo) 1/zeta(k)
+  $
+  
+
+  
+]
 
 === Une séquence préférée - $chocolate$
 
