@@ -100,3 +100,46 @@
     det((i and j)_((i,j) in eintl 1, n eintr^2)) = product_(k = 1)^n phi(k)
   $
 ]
+
+=== Quelques valeurs du symbole de Legendre - $ram sponge$
+
+#question[On prend $p in cal(P), p != 2$.
+
+1) Soit $n, m in NN$ tels que $p divides.not n, m$, en notant $(dot/dot)$ le symbole de Legendre définis plus haut, montrer que:
+$
+  ((n m)/p) = (n/p)(m/p) \
+  (n/p) eq.triple  n^((p-1)/2) [p]
+$
+
+2) On note, pour $xi in CC$, $ZZ[xi]$ le plus petit sous anneau $A$ de $CC$ (pour l'inclusion) vérifiant:
+$
+  ZZ subset A \
+  xi in A
+$
+
+On définis de plus la relation $cal(R)$ sur $ZZ[xi]$ par:
+$
+  x cal(R) y <=> exists lambda in ZZ[xi], x-y = lambda p
+$
+
+Montrer que $cal(R)$ est une relation d'équivalence sur $ZZ[xi]$ et que si l'on note $ZZ[xi]\/angle.l p angle.r$ l'ensemble des classes d'équivalence,
+$ZZ[xi]\/angle.l p angle.r$ hérite de la structure d'anneau de $ZZ[xi]$.
+\ \
+3) On prend $p > 3$. On considère $ZZ[j]\/angle.l p angle.r$ et $a = j - j^2$.
+
++ En regardant $a^2$, montrer que $-3$ est un résidus quadratique modulo $p$ ssi $a^p = a$ dans $ZZ[j]\/ angle.l p angle.r$. 
+
++ En déduire que $3$ est un résidus quadratique modulo $p$ ssi $p eq.triple plus.minus 1 [p]$.
+
+4) En posant $alpha = e^(i pi/4)$, par la même méthode que la question précédente et en considérant $ZZ[alpha]\/angle.l p angle.r$ et $a = alpha + alpha^(-1)$ montrer que
+$2$ est un résidus quadratique modulo $p$ ssi $p eq.triple plus.minus 1 [8]$
+]
+
+#indic[
+  1) Vérifier que $cal(C) = {x^2 | x in FF_p ^*}$ est un sous groupe de $FF_p ^*$ et en calculer son cardinal.
+
+  2) L'écrire
+
+  3) Utiliser la relation de la question 1, ne pas etre tente trop vite de dire que $-3$ est un résidus quadratique car $a^2 = -3$, $a$ n'est pas forcément dans $ZZ$.
+
+]
