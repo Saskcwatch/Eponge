@@ -316,7 +316,7 @@
   On prend $p in cal(P)$ et on note $I_n$ la probabilité qu'un polynome tiré au hasard dans $FF_p [X]$ soit
   irréductible, unitaire et de degrès au plus $n$.
 
-  Determiner un dévelpoement asymptotique de $I_n$ quand $n$ tend vers l'infini. 
+  Determiner un dévelopement asymptotique à $1$ terme de $I_n$ quand $n$ tend vers l'infini. 
 ]
 
 #indic[

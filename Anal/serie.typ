@@ -45,8 +45,10 @@ Soient $x, t in RR$.
 
 Discuter de la convergence, et calculer :
 $ T(x,t) := sum_(n=0)^(+infinity) T_n (x) t^n quad "et" quad  U(x, t):=sum_(n=0)^(+infinity) U_n (x) t^n $
+
+#pagebreak()
 ]
-\ \ \
+
 === Fibo ? - $ram$
 
 #question[On définit la suite de fibbonacci par :
@@ -96,8 +98,10 @@ $
 Determiner la nature de 
 $
 S_n = sum_(n >= 1) 1/f(n)
-$]
+$
 \
+]
+
 === Double somme ? - $mushroom$
 
 #question[

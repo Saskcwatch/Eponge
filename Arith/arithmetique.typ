@@ -21,13 +21,13 @@
   Pour $p in cal(P)$, $n in NN$, on définis le symbole de Legendre $(n/p)$ par:
   $
     (n/p) := cases(
-      0 &"si" a eq.triple 0 [p],
+      0 &"si" n eq.triple 0 [p],
       1 &"si" p divides.not n "et" exists k in NN\, n eq.triple k^2 [p],
       -1 &"sinon"
     ) 
   $
 
-  Si $(n/p) = 1$, on dit que $n$ est un résidus quadratique modulo $p$.
+  Si $(n/p) = 1$, on dit que $n$ est un résidu quadratique modulo $p$.
 ]
 
 === Une suite de PGCD - $chocolate$
@@ -129,9 +129,9 @@ $ZZ[xi]\/angle.l p angle.r$ hérite de la structure d'anneau de $ZZ[xi]$.
 
 + En regardant $a^2$, montrer que $-3$ est un résidus quadratique modulo $p$ ssi $a^p = a$ dans $ZZ[j]\/ angle.l p angle.r$. 
 
-+ En déduire que $3$ est un résidus quadratique modulo $p$ ssi $p eq.triple plus.minus 1 [p]$.
++ En déduire que $3$ est un résidus quadratique modulo $p$ ssi $p eq.triple plus.minus 1 [12]$.
 
-4) En posant $alpha = e^(i pi/4)$, par la même méthode que la question précédente et en considérant $ZZ[alpha]\/angle.l p angle.r$ et $a = alpha + alpha^(-1)$ montrer que
+4) En posant $zeta = e^(i pi/4)$, par la même méthode que la question précédente et en considérant $ZZ[zeta]\/angle.l p angle.r$ et $a = zeta + zeta^(-1)$ montrer que
 $2$ est un résidus quadratique modulo $p$ ssi $p eq.triple plus.minus 1 [8]$
 ]
 
@@ -140,6 +140,6 @@ $2$ est un résidus quadratique modulo $p$ ssi $p eq.triple plus.minus 1 [8]$
 
   2) L'écrire
 
-  3) Utiliser la relation de la question 1, ne pas etre tente trop vite de dire que $-3$ est un résidus quadratique car $a^2 = -3$, $a$ n'est pas forcément dans $ZZ$.
+  3) Utiliser la relation de la question 1, ne pas être tenté trop vite de dire que $-3$ est un résidus quadratique par ce que $a^2 = -3$: $a$ n'est pas forcément dans $ZZ$.
 
 ]
