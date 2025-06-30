@@ -12,11 +12,19 @@ $
 (i i) quad & forall (g, h) in G^2, g dot (h dot x) = (g star h) dot x $
 
 2. #underline[Orbite]:
-Soient $G$ un groupe, $X$ un ensemble et $dot$ une action de groupe de $G$ sur $X$.
-On appelle orbite de $x in X$ l'ensemble $ O(x) := {g dot x; g in G} $
+Soient $G$ un groupe, $X$ un ensemble et $dot$ une action de $G$ sur $X$.
+On appelle orbite de $x in X$ l'ensemble $ O(x) := {g dot x| g in G} $
 
+3. #underline[Stabilisateur]:
+Soient $G$ un groupe, $X$ un ensemble et $dot$ une action de $G$ sur $X$.
+On appelle stabilisateur de $x in X$ l'ensemble
+$
+  G_x := {g in G | g dot x = x}
+$
 
-3. #underline[Produit semi direct]:
+On vérifie aisement que $G_x$ est un sous groupe de $G$.
+
+4. #underline[Produit semi direct]:
 Soient $G, H$ deux groupes et $f$ un morphisme de $H$ dans $"Aut"(G)$.
 On appelle produit semi-direct de $G$ par $H$ relativement à $f$ l'ensemble $K = G times H$ muni de la structure de groupe :
 $(g_1, h_1) (g_2, h_2) = (g_1 f(h_1)(g_2), h_1 h_2)$
@@ -183,4 +191,51 @@ $
 
 #indic[
   Considérer un sous groupe engendrer par un $3-"cycle"$ et une double permutation.
+]
+
+=== Orbite-Stabilisateur - $chocolate sponge$
+
+#question[
+  Soit $G$ un groupe fini agissant sur $X$ par $dot$. Montrer que pour $x in X$,
+  $
+    |G_x| |O(x)| = |G|
+  $
+]
+
+=== Théorème de Cayley - $chocolate sponge$
+
+#question[
+  Soit $G$ un groupe finis, montrer que $G$ est isomorphe à un sous groupe de $frak(S)_n$ pour un certain $n$ à préciser.
+]
+
+=== Un théorème de Sylow - $hammer sponge$
+
+#question[
+  Si $p in cal(P)$, on appelle, pour $G$ un groupe finis d'ordre $p^alpha m$ avec $p and m = 1$, $p-"sylow"$ un sous groupe de $G$ d'ordre $p^alpha$. On
+  souhaite montrer qu'un tel groupe existe toujours.
+
+  1) Soit $n in NN^*$ et $p in cal(P)$. Calculer le cardinal de $G = GL_n (FF_p)$ puis exhiber un $p-"sylow"$ de $G$.
+
+  2) On souhaite montrer que si $G$ admet un $p-"sylow"$ alors tout sous groupe de $G$, $H$ en admet un aussi.
+  1. On prend $S$ un $p-"sylow"$ de $G$ et $H$ un sous groupe de $G$. On considère l'action $dot$ de $G$ sur $G\/S = {a S | a in G}$ définis par:
+  $
+    g dot a S = g a S
+  $
+  Montrer que pour $a in G$, le stabilisateur de $a S$ est $a S a^(-1)$
+  2. Montrer que pour $a in G$, $H inter a S a^(-1)$ est un sous groupe de $H$ de cardinal une puissance de $p$.
+
+  3. Montrer qu'on dispose de $a in G$ tel que $H inter a S a^(-1)$ soit un $p-"sylow"$ de $H$.
+
+  3) Conclure à l'aide du théorème de Cayley et de la question 1.
+]
+
+#indic[
+  1) Compter les bases de $FF_p ^n$.
+
+  2)
+  1. ...
+  2. ...
+  3. On pourra s'interesser à la restriction à $H$ de l'action de $G$ sur $G\/S$ puis utiliser le théroème d'orbite stabilisateur.
+
+  3) Plonger $G$ dans $frak(S)_n$ puis dans $GL_n (FF_p)$.
 ]
