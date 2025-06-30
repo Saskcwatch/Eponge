@@ -24,6 +24,8 @@
 }
 
 #import emoji: (sponge, star, ram, horn, tree, gorilla, baby, monkey, moyai, chocolate, hammer, ambulance, mushroom, quest)
+#let ramranch = $ram$
+
 
 #set text(lang: "fr")
 

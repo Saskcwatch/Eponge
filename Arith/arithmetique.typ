@@ -101,7 +101,7 @@
   $
 ]
 
-=== Quelques valeurs du symbole de Legendre - $ram sponge$
+=== Quelques valeurs du symbole de Legendre - $ramranch sponge$
 
 #question[On prend $p in cal(P), p != 2$.
 

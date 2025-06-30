@@ -64,7 +64,7 @@
 - $baby$ : Facile...
 - $chocolate$ : Réalisable avec peu de réflexion.
 - $mushroom$ : Commencer à réfléchir au-delà du complexe.
-- $ram$ : Reflexion strictement cruciale nescessaire.
+- $ramranch$ : Reflexion strictement cruciale nescessaire.
 - $hammer$ : Une grande intuition sera utile.
 - $gorilla$ : Plusieurs après-midis amusantes garanties !
 - $moyai$ : Connaissance infinie et sang-froid à toute épreuve requis.
@@ -144,6 +144,8 @@ $ cal("Bonne Chance !") $
 = Analyse
 == Suites
 #include "Anal/suites.typ"
+== Continuité
+#include "Anal/continuite.typ"
 == Equations fonctionnelles
 #include "Anal/equation_fonctionnelles.typ"
 == Equations différentielles

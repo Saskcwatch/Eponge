@@ -202,7 +202,7 @@
   #pagebreak()]
 
 
-=== Determinant deterministe ? - $ram$
+=== Determinant deterministe ? - $ramranch$
 
 #question[Soit $n in NN^*$ et $(X_(i, j))_((i, j) in eintl 1, n eintr^2)$ $n^2$ variables aléatoires identiquement distribuées mutuellement indépendantes.
   On note $Delta_n = det ((X_(i, j))_((i,j) in eintl 1, n eintr^2))$.
@@ -248,7 +248,7 @@
   Ceci étant vrai pour tout $x in A$, $X$ et $Y$ suivent la même loi.
 ]
 
-=== Des dés pipés ? - $ram$
+=== Des dés pipés ? - $ramranch$
 
 #question[
   Peut-on construire 2 dés à $6$ faces numérotés de $1$ à $6$ tels que la variable aléatoire qui compte la somme des valeurs obtenues suive une loi uniforme ?
