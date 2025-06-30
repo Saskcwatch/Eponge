@@ -214,7 +214,7 @@ $
   Si $p in cal(P)$, on appelle, pour $G$ un groupe finis d'ordre $p^alpha m$ avec $p and m = 1$, $p-"sylow"$ un sous groupe de $G$ d'ordre $p^alpha$. On
   souhaite montrer qu'un tel groupe existe toujours.
 
-  1) Soit $n in NN^*$ et $p in cal(P)$. Calculer le cardinal de $G = GL_n (FF_p)$ puis exhiber un $p-"sylow"$ de $G$.
+  1) Soit $n in NN^*$ et $p in cal(P)$. Calculer le cardinal de $G = "GL"_n (FF_p)$ puis exhiber un $p-"sylow"$ de $G$.
 
   2) On souhaite montrer que si $G$ admet un $p-"sylow"$ alors tout sous groupe de $G$, $H$ en admet un aussi.
   1. On prend $S$ un $p-"sylow"$ de $G$ et $H$ un sous groupe de $G$. On considère l'action $dot$ de $G$ sur $G\/S = {a S | a in G}$ définis par:
@@ -237,5 +237,5 @@ $
   2. ...
   3. On pourra s'interesser à la restriction à $H$ de l'action de $G$ sur $G\/S$ puis utiliser le théroème d'orbite stabilisateur.
 
-  3) Plonger $G$ dans $frak(S)_n$ puis dans $GL_n (FF_p)$.
+  3) Plonger $G$ dans $frak(S)_n$ puis dans $"GL"_n (FF_p)$.
 ]
