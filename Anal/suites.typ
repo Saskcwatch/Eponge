@@ -28,3 +28,14 @@ Trouver les deux premiers termes du DA de $(x_n)$]
 #indic[
   Penser à un DES.
 ]
+
+=== - $mushroom$
+
+#question[
+  Soit $(a_n)_(n in NN) in RR^NN$ tel que pour $n in NN$,
+  $
+    a_n sum_(k = 0)^n = 1
+  $
+
+  Determiner un équivalent à $a_n$
+]
