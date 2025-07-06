@@ -32,10 +32,10 @@ Trouver les deux premiers termes du DA de $(x_n)$]
 === - $mushroom$
 
 #question[
-  Soit $(a_n)_(n in NN) in RR^NN$ tel que pour $n in NN$,
+  Soit $(u_n)_(n in NN) in RR^NN$ tel que pour $n in NN$,
   $
-    a_n sum_(k = 0)^n = 1
+    u_n sum_(k = 0)^n u_k ^2= 1
   $
 
-  Determiner un équivalent à $a_n$
+  Determiner un équivalent à $u_n$
 ]

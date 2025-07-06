@@ -143,3 +143,36 @@ $2$ est un résidus quadratique modulo $p$ ssi $p eq.triple plus.minus 1 [8]$
   3) Utiliser la relation de la question 1, ne pas être tenté trop vite de dire que $-3$ est un résidus quadratique par ce que $a^2 = -3$: $a$ n'est pas forcément dans $ZZ$.
 
 ]
+
+=== Réciprocité quadratique - $ramranch sponge$
+
+#question[
+  On considere $p, q in cal(P), p > 2, q > 2, p != q$. On conserve les notations de l'exercice précédent pour les anneaux.
+
+  On souhaite montrer la loi de réciprocité quadratique qui stipule que:
+  $
+    (p/q)(q/p) = (-1)^(((p-1)(q-1))/4)
+  $ 
+
+  On considère dans la suite $zeta = e^(i (2 pi)/p)$.
+
+\ \
+  On prend de plus:
+  $
+    G: ZZ &earrow ZZ[zeta] \
+        x &asarrow sum_(k = 0)^(p - 1) (k/p) zeta^(x k)
+  $
+
+  1) Montrer que pour $a in ZZ$,
+  $
+    G(a) = (a/p) G(1)
+  $
+
+  2) En calculant de 2 manières différentes
+  $
+    sum_(a = 0)^(p-1)G(a) G(-a)
+  $
+  Exprimer $G(1)^2$
+
+  3) Calculer $G(1)^(q-1)$ dans $ZZ[zeta]\/angle.l q angle.r$ et conclure.
+]

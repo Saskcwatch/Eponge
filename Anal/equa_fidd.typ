@@ -6,7 +6,7 @@
 #question[
   Soit $phi in cal(C)^2(RR, RR)$, tel que:
  $ 
- phi(x) limits(lrarrow)_(x -> +oo) l in RR \
+ phi(x) lim_(x -> +oo) l in RR \
  exists alpha > 0, forall x in RR,  phi(x) >= alpha
  $
 

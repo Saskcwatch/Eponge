@@ -39,7 +39,7 @@
   3) Raisonner par l'absurde et faire de l'arithmétique.
 ]
 
-=== Une feuille dans $FF_p$ - $gorilla$
+=== Une feuille dans $FF_p$ - $ramranch$
 
 
 #question[On prend $p in cal(P)$, $p > 3$ et on considère
