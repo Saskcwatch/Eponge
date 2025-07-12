@@ -53,3 +53,15 @@ $
 #indic[
   Les séries sont vos amis.
 ]
+
+=== La fonction Collao - $mushroom$
+
+#question[
+  Pour tout $x in RR \\ {-1, 1}$, on pose $ I(x) = int_0^pi log(1 - 2 x cos(t) + x^2) dif x $
+
+  En étudiant le polynôme $X^(2 n) - 1$ pour $n in NN^*$, calculer $I(x)$ pour tout $x in RR \\ {-1, 1}$
+]
+
+#indic[
+  Décomposer $X^(2 n) - 1$ comme produit d'irréductibles sur $RR[X]$.
+]
