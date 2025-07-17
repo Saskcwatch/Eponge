@@ -23,7 +23,7 @@
   panic("Unknown compile mode: " + compile_mode)
 }
 
-#import emoji: (sponge, star, ram, horn, tree, gorilla, baby, monkey, moyai, chocolate, hammer, ambulance, mushroom, quest)
+#import emoji: (sponge, star, ram, horn, tree, gorilla, baby, monkey, moyai, chocolate, hammer, ambulance, mushroom, quest, face)
 #let ramranch = $ram$
 
 
