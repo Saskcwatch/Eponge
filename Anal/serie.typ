@@ -113,10 +113,17 @@ $
 
 === Utile contre-exemple - $hammer$
 
-#question[Determiner la nature de
+#question[
+1) Determiner la nature de
 $
-sum_(p in cal(P)) 1/p
-$]
+sum_(p in cal(P)) 1/p 
+$
+
+2) $gorilla$ Trouver un equivalent simple de:
+$
+  sum_(p in cal(P), p <= n) 1/p
+$ 
+]
 
 
 === Des séries palindromiques - $chocolate$
