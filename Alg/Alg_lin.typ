@@ -47,3 +47,17 @@ Montrer qu'il existe $f, g$ deux fonctions périodiques définies sur $RR$ telle
   
   2) Dual...
 ]
+
+=== Les vaches de l'ENS - $ramranch$
+
+#question[
+  Un paysan possède $2p + 1$ vaches, a chaque fois que l'on choisis une vache, le paysan réussit a répartir les $2p$ restantes en deux groupes de $p$ vaches de même poid total.
+
+  Montrer que toutes les vaches font le même poid.
+]
+
+#indic[
+  On pourra essayer de modéliser la situation a l'aide de matrices: on prend $v in RR^(2p + 1)$ qui contient le poids des vaches et considérer des formes linéaires qui traduise le choix et la répartition des vaches.
+]
+
+
