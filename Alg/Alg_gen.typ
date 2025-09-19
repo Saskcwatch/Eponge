@@ -239,3 +239,20 @@ $
 
   3) Plonger $G$ dans $frak(S)_n$ puis dans $"GL"_n (FF_p)$.
 ]
+
+=== Alice et Bob jouent avec un groupe - $hammer$
+
+#question[
+  Alice et Bob jouent avec un groupe fini $G$: chacun leur tour ils prennent un élément du groupe et le mette sur la table. Le joueur rendant la table génératrice de $G$ perd.
+  On cherche à savoir si, sous l'hypothèse que l'on joue de manière optimal, il faille commencer.
+
+  1) Traiter le cas $G = (ZZ / n ZZ, +)$ pour $n in NN^*$.
+
+  2) $ambulance$ Traiter le cas $G = frak(S)_n$ pour $n in NN^*$.
+  
+  3) $ambulance$ Traiter le cas d'un groupe abélien quelconque.
+]
+
+#indic[
+  1) Utiliser le lemme chinois au maximum.
+]
