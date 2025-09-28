@@ -39,18 +39,18 @@
   3) Raisonner par l'absurde et faire de l'arithmétique.
 ]
 
-=== Une feuille dans $FF_p$ - $ramranch$
+// === Une feuille dans $FF_p$ - $ramranch$
 
 
-#question[On prend $p in cal(P)$, $p > 3$ et on considère
-  la courbe $cal(F)$ définie sur $PP^2 (FF_p)$ par l'équation
-  $
-    x^3 + y^3 - 3 x y = 0
-  $
+// #question[On prend $p in cal(P)$, $p > 3$ et on considère
+//   la courbe $cal(F)$ définie sur $PP^2 (FF_p)$ par l'équation
+//   $
+//     x^3 + y^3 - 3 x y = 0
+//   $
 
-  Trouver une condition néscecaire et suffisante sur $p$ pour que $cal(F)$ admette trois point a l'infini distincts.
-]
+//   Trouver une condition néscecaire et suffisante sur $p$ pour que $cal(F)$ admette trois point a l'infini distincts.
+// ]
 
-#indic[
+// #indic[
 
-]
+// ]
