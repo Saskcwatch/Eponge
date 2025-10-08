@@ -65,3 +65,16 @@ $
 #indic[
   Décomposer $X^(2 n) - 1$ comme produit d'irréductibles sur $RR[X]$.
 ]
+
+=== - $hammer$
+
+#question[
+  Calculer
+  $
+    int_0^1 log(Gamma(t)) dif t
+  $
+]
+
+#indic[
+  On pourra utiliser la "propriété du roi" et l'équation fonctionelle de $Gamma$.
+]
