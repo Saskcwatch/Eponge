@@ -57,7 +57,29 @@
   Calculer $ sum_(n=0)^(+oo) arctan(1/F_(2n+1)) $]
 
 #indic[
-  Commencer par montrer que, pour tout $n in NN^*$, $F_n^2 - F_(n+1)F_(n-1) = (-1)^n$
+  Commencer par montrer que, pour tout $n in NN^*$, $F_(n+1)^2 - F_(n+2)F_n = (-1)^n$, puis trouver un télescopage.
+]
+
+#correction[
+  On montre sans trop de difficultés par récurrence que pour tout $n in NN$, $F_(n+1)^2 - F_(n+2) F_n = (-1)^n$.
+
+  On va faire apparaître un télescopage de la forme $arctan(1/F_(2 n)) - arctan(1/F_(2 n + 2))$
+
+  Pour cela, on remarque que, pour tout $n in NN^*$
+  $
+    tan(arctan(1 / F_(2 n)) - arctan(1 / F_(2 n + 2))) & = tan(arctan(F_(2 n + 2)) - arctan(F_(2 n))) \
+                                                       & = (F_(2 n + 2) - F_(2 n))/ (1 + F_(2 n + 2) F_(2 n)) \
+                                                       & = F_(2 n + 1) / (F_(2 n + 1)^2) \
+                                                       & = 1/F_(2 n + 1)
+  $
+
+  Comme $0 <= 1/F_(2 n) <= 1$ et $0 <= 1/F_(2 n + 2) <= 1$, on a $-pi/4 <= arctan(1 / F_(2 n)) - arctan(1 / F_(2 n + 2)) <= pi/4$.
+
+  Ainsi, pour tout $n in NN^*$, $ arctan(1 / F_(2 n)) - arctan(1 / F_(2 n + 2)) & = arctan(tan(arctan(1 / F_(2 n)) - arctan(1 / F_(2 n + 2)))) \
+                                                & = arctan(1/F_(2 n + 1)) $
+
+  Par télescopage, $ sum_(n=1)^(+oo) arctan(1/F_(2 n + 1)) = sum_(n = 1)^(+oo) arctan(1/F_(2 n)) - arctan(1/F_(2 n + 2)) = pi/4 $
+  D'où $ sum_(n=0)^(+oo) arctan(1/F_(2 n + 1)) = pi/2 $
 ]
 
 === Une petite odeur de Cesàro - $chocolate$
@@ -98,7 +120,7 @@
         x quad & barow cases(x "si" x lt.eq.slant e, x f(log(x)) "si " x > e)
   $
 
-  Determiner la nature de 
+  Determiner la nature de
   $
     S_n = sum_(k = 1)^n 1/f(k)
   $
@@ -124,7 +146,7 @@
   2) ($gorilla$) Trouver un equivalent simple de:
   $
     sum_(p in cal(P), p <= n) 1/p
-  $ 
+  $
 ]
 
 
@@ -191,8 +213,8 @@
 #question[
   On considère:
   $
-    phi : {-1, 1}^NN^* &earrow RR \
-          (u_n)_(n >= 1) &asarrow sum_(n=1)^oo u_n/n^2
+    phi : {-1, 1}^NN^* & earrow RR \
+        (u_n)_(n >= 1) & asarrow sum_(n=1)^oo u_n/n^2
   $
 
   Determiner $img(phi)$
