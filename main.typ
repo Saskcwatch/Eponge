@@ -158,3 +158,5 @@ $ cal("Bonne Chance !") $
 = Topologie
 == Calcul différentiel 
 #include "Topo/calcul_diff.typ"
+== Continuité Linéaire
+#include "Topo/continuité_lin.typ"

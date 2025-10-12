@@ -66,12 +66,12 @@
   Soit $(u_n)_(n in NN)$ une suite à valeurs dans $CC$.
   On pose $ S_n := sum_(k = 0)^n u_k quad "et" quad sigma_n := 1/ (n + 1)sum_(k=0)^n S_k $
 
-
   1) On suppose que $(u_n)$ est à valeurs dans $RR^+$. Montrer que $ (S_n) "converge" <==> (sigma_n) "converge" $
 
   2) Même question si on suppose $u_(n+1) - u_n = cal(o)(1/n)$
 
-  3) ($hammer$) Même question si on suppose $u_(n+1) - u_n = cal(O)(1/n)$.]
+  3) ($hammer$) Même question si on suppose $u_(n+1) - u_n = cal(O)(1/n)$.
+]
 
 
 === Casse-tête normalien - $ambulance$
@@ -98,11 +98,10 @@
         x quad & barow cases(x "si" x lt.eq.slant e, x f(log(x)) "si " x > e)
   $
 
-  Determiner la nature de
+  Determiner la nature de 
   $
-    S_n = sum_(n >= 1) 1/f(n)
+    S_n = sum_(k = 1)^n 1/f(k)
   $
-  \
 ]
 
 === Double somme ? - $mushroom$
@@ -122,10 +121,10 @@
     sum_(p in cal(P)) 1/p
   $
 
-  2) $gorilla$ Trouver un equivalent simple de:
+  2) ($gorilla$) Trouver un equivalent simple de:
   $
     sum_(p in cal(P), p <= n) 1/p
-  $
+  $ 
 ]
 
 
@@ -185,5 +184,17 @@
 
   \
   Si quelqu'un a une estimation plus précise de $pi_n$, je suis preneur $face.inv$
+]
+
+=== Combien de trou ? - $gorilla$
+
+#question[
+  On considère:
+  $
+    phi : {-1, 1}^NN^* &earrow RR \
+          (u_n)_(n >= 1) &asarrow sum_(n=1)^oo u_n/n^2
+  $
+
+  Determiner $Im phi$
 ]
 

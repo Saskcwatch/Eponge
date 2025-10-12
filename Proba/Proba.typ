@@ -209,7 +209,7 @@
 
   1) On suppose $X_(1,1)$ centrée. Exprimer $VV(Delta_n)$ en fonction de $VV(X_(1, 1))$.
 
-  2) ($moyai$) On ne suppose plus $X_(1, 1)$ centré, determiner $VV(Delta_n)$.
+  2) ($hammer$) On ne suppose plus $X_(1, 1)$ centré, determiner $VV(Delta_n)$.
 ]
 
 

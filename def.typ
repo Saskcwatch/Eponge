@@ -12,6 +12,7 @@
 #let lim = $limits(stretch(->, size: #350%))$
 #let earrow = $stretch(->, size: #350%)$
 #let asarrow = $stretch(|->, size: #350%)$
+#let iso = $tilde.equiv$
 // #let ramranch = $ram$
 #let ln = $log$
 #let emptyset = $diameter$
