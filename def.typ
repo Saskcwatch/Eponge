@@ -16,6 +16,7 @@
 // #let ramranch = $ram$
 #let ln = $log$
 #let emptyset = $diameter$
+#let img = $op("Im")$
 
 
 

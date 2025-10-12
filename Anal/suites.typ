@@ -39,3 +39,9 @@ Trouver les deux premiers termes du DA de $(x_n)$]
 
   Determiner un équivalent à $u_n$
 ]
+
+=== Mines Absurdes - $gorilla$
+
+#question[
+  Montrer que la suite $(floor(n sqrt(2))_n)$ admet une infinité de terme de la forme une puissance de $2$.
+]

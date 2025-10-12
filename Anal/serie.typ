@@ -195,6 +195,6 @@
           (u_n)_(n >= 1) &asarrow sum_(n=1)^oo u_n/n^2
   $
 
-  Determiner $Im phi$
+  Determiner $img(phi)$
 ]
 
