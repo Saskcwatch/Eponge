@@ -5,8 +5,8 @@
 
 #let lrarrow = $\u{27F6}$
 
-#let eintr = $bracket.r.double$
-#let eintl = $bracket.l.double$
+#let eintr = $|]$
+#let eintl = $[|$
 #let grad = $arrow(nabla)$
 #let sui = $stretch(arrow.r.hook, size: #130%)$
 #let lim = $limits(stretch(->, size: #350%))$

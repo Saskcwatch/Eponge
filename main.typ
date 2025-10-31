@@ -4,14 +4,9 @@
 
 #show: pset.with(
   title: "EPONGE",
-  author: "Stéphanovic, Piotrovicovic, Patrickovic, Danielovic, Xavierovic",
+  author: "Stéphanovic, Piotrovicovic, Patrickovic, Danielovic",
   date: datetime.today(),
 )
-
-
-
-#import "@preview/codly:1.0.0": *
-#show: codly-init.with()
 
 // -------------------- PREMIERE PAGE --------------------
 
@@ -85,7 +80,7 @@
   [$x := A \ 
   A =: x$], [Définition de $x$ comme $A$],
   [$NN, ZZ, QQ, RR, CC, FF_q$], [Respectivement les ensembles des nombres entiers naturels, relatifs, rationels, réels et complexes, le corps fini à $q$ éléments], 
-  [$eintl k, l eintr$], [Les entiers de $k$ a $l$ : $eintl k, l eintr = [k, l] inter ZZ$],
+  [$[| k, l |]$], [Les entiers de $k$ a $l$ : $eintl k, l eintr = [k, l] inter ZZ$],
   [$cal(P)$], [L'ensemble des nombres premiers],
   [$UU_n$], [Les racines n-éme de l'unité, $UU_n = {x in CC | x^n - 1 = 0}$],
   [$frak(S)_n$, $frak(A)_n$], [Les permuations de $eintl 1, n eintr$, les permutations de signature $1$],

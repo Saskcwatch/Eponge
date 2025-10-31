@@ -1,24 +1,32 @@
 
-#import "@preview/jogs:0.2.3": *
-
-#let code = ```
-function romanise (num) {
-    if (isNaN(num))
-        return NaN;
-    var digits = String(+num).split(""),
-        key = ["","C","CC","CCC","CD","D","DC","DCC","DCCC","CM",
-               "","X","XX","XXX","XL","L","LX","LXX","LXXX","XC",
-               "","I","II","III","IV","V","VI","VII","VIII","IX"],
-        roman = "",
-        i = 3;
-    while (i--)
-        roman = (key[+digits.pop() + (i * 10)] || "") + roman;
-    return Array(+digits.join("") + 1).join("M") + roman;
+#let romanise(num) = {
+  let roman-map = (
+    (1000, "M"),
+    (900, "CM"),
+    (500, "D"),
+    (400, "CD"),
+    (100, "C"),
+    (90, "XC"),
+    (50, "L"),
+    (40, "XL"),
+    (10, "X"),
+    (9, "IX"),
+    (5, "V"),
+    (4, "IV"),
+    (1, "I"),
+  )
+  let result = ""
+  let remainder = num
+  for (value, symbol) in roman-map {
+    while remainder >= value {
+      result += symbol
+      remainder -= value
+    }
+  }
+  result
 }
-```
 
 
-#let bytecode = compile-js(code)
 
 #let pset(class: "6.100",
   title: "PSET 0",
@@ -30,7 +38,6 @@ function romanise (num) {
 ) = {[
 
 
-//#let dateRev = call-js-function(bytecode, "format", date.year(), date.month(), date.day())
 
 /* Convert collaborators to a string if necessary */
 #let collaborators=if type(collaborators) == array {collaborators.join(", ")} else {collaborators}
@@ -38,7 +45,7 @@ function romanise (num) {
 /* Problem + subproblem headings */
 #set heading(numbering: (..nums) => {
     nums = nums.pos()
-    let roman = call-js-function(bytecode, "romanise", nums.at(0))
+    let roman = romanise(nums.at(0))
     if nums.len() == 1 {
       [ Chapitre #roman.
       ]
