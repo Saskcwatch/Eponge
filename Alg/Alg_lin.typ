@@ -60,4 +60,10 @@ Montrer qu'il existe $f, g$ deux fonctions périodiques définies sur $RR$ telle
   On pourra essayer de modéliser la situation a l'aide de matrices: on prend $v in RR^(2p + 1)$ qui contient le poids des vaches et considérer des formes linéaires qui traduise le choix et la répartition des vaches.
 ]
 
+=== Inutile infinité - $moyai$
+
+#question[
+  Soit $I$ un ensemble et $KK in {RR, CC}$. On note $underline(e)$ une base de $KK^I$. Montrer que $I$ est infini si et seulement si $underline(e)$ et $KK^I$ sont équipotents.
+]
+
 
