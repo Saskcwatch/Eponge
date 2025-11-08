@@ -151,6 +151,8 @@ $ cal("Bonne Chance !") $
 #include "Anal/serie.typ"
 
 = Topologie
+== Topologie générale
+#include "Topo/topologie_gen.typ"
 == Espace métrique / vectoriel normé
 #include "Topo/espace_metrique_vect.typ"
 == Calcul différentiel 
