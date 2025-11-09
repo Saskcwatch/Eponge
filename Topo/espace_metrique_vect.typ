@@ -25,3 +25,11 @@
   2) $ramranch$ Montrer que $RR^2 \\ QQ^2$ est connexe par arc $cal(C)^oo$:
   $ forall x, y in RR^2 \\ QQ^2 space.third exists gamma in cal(C)^oo ([0,1], RR^2) "tq" gamma(0) = x, space.quarter gamma(1) = y, space.quarter gamma([0,1]) inter QQ^2 = emptyset. $
 ]
+
+=== Polynome ouvert - $mushroom$
+
+#question[
+  1) Soit $P in CC[X]$ non constant. Montrer que $t asarrow P(t)$ est surjective de $CC$ dans $CC$.
+
+  2) Soit $P in CC[X]$ non constant et $cal(U)$ un ouvert de $CC$ pour la topologie usuelle. Montrer que $P(cal(U))$ est ouvert.
+]
