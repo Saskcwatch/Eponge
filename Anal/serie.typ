@@ -92,7 +92,7 @@
 
   2) Même question si on suppose $u_(n+1) - u_n = cal(o)(1/n)$
 
-  3) ($hammer$) Même question si on suppose $u_(n+1) - u_n = cal(O)(1/n)$.
+  3) $hammer$ Même question si on suppose $u_(n+1) - u_n = cal(O)(1/n)$.
 ]
 
 
@@ -143,7 +143,7 @@
     sum_(p in cal(P)) 1/p
   $
 
-  2) ($gorilla$) Trouver un equivalent simple de:
+  2) $gorilla$ Trouver un équivalent simple de:
   $
     sum_(p in cal(P), p <= n) 1/p
   $
@@ -157,7 +157,7 @@
 
   1) La famille $(1/i)_(i in P)$ est-elle sommable ?
 
-  2) ($ambulance$) Déterminer un équivalent asymptotique de $ pi_n := sum_(limits(i in P)_(i <= n)) 1/sqrt(i) $
+  2) $ambulance$ Déterminer un équivalent asymptotique de $ pi_n := sum_(limits(i in P)_(i <= n)) 1/sqrt(i) $
 ]
 
 #indic[

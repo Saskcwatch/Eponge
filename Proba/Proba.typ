@@ -29,7 +29,7 @@
 
   1) On pose $l = 2$, determiner la probabilité que $A$ gagne, que $B$ gagne et que $C$ gagne.
 
-  2) ($ambulance$) $l$ n'est plus fixé. Déterminer un développement asymptotique, en fonction de $l$, de la probabilité $p_l$ que $C$ gagne quand $l$ tend vers $+ oo$
+  2) $ambulance$ $l$ n'est plus fixé. Déterminer un développement asymptotique, en fonction de $l$, de la probabilité $p_l$ que $C$ gagne quand $l$ tend vers $+ oo$
 ])
 
 #indic[
@@ -63,7 +63,7 @@
 
   1) Determiner $EE(F)$
 
-  2) ($mushroom$) Determiner $EE(C)$
+  2) $mushroom$ Determiner $EE(C)$
 ])
 
 === Le quart de ce qu'on ne vous souhaite pas - $mushroom$
@@ -198,7 +198,7 @@
 
   3) Quelle est la probabilité de l’événement “la séquence PP apparaît sans que la séquence PF ne soit apparue auparavant” dans cette même configuration ?
 
-  4) ($moyai$) On considère à présent un dé à trois faces numéroté par ${1;6;8}$, de probabilité respective $p_1, p_6$ et $p_8$. Quelle est la probabilité de l'événement "la séquence '861' apparaît pour la première fois (dans cet ordre) aux lancer $n - 2, n - 1$ et $n$"
+  4) $moyai$ On considère à présent un dé à trois faces numéroté par ${1;6;8}$, de probabilité respective $p_1, p_6$ et $p_8$. Quelle est la probabilité de l'événement "la séquence '861' apparaît pour la première fois (dans cet ordre) aux lancer $n - 2, n - 1$ et $n$"
   #pagebreak()]
 
 
@@ -209,7 +209,7 @@
 
   1) On suppose $X_(1,1)$ centrée. Exprimer $VV(Delta_n)$ en fonction de $VV(X_(1, 1))$.
 
-  2) ($hammer$) On ne suppose plus $X_(1, 1)$ centré, determiner $VV(Delta_n)$.
+  2) On ne suppose plus $X_(1, 1)$ centré, determiner $VV(Delta_n)$.
 ]
 
 

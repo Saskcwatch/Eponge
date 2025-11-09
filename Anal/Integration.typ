@@ -23,7 +23,7 @@ $
 === Un calcul de E-M - $hammer$
 
 #question[
-Calculer 
+Justifier l'existence et calculer 
 $ int_0^(+oo) e^(-x)log(x) dif x $
 ]
 
@@ -43,7 +43,7 @@ $ integral_0^(pi/2) {tan(x)} dif x $
 === Sympathique résultat - $mushroom$
 
 #question[
-Determiner
+Montrer la convergence et déterminer
 
 $
 int_0^1 arctan(x)log(x)dif x
