@@ -25,12 +25,14 @@
 
 === Duel - $mushroom$
 
-#question([On prend trois joueurs $A, B, C$ qui se battent en duel. Lors d'un duel, entre $B$ et $C$ par exemple, chaque joueur a 1 chance 2 sur deux de gagner et 1 chance sur 2 de perdre, le perdant d'un duel sort du terrain et celui qui ne jouait pas entre pour faire un duel avec le gagnant précédent. Un joueur gagne le tournoi si il réalise $l in NN$ victoire d'affiler. $A$ et $B$ commencent.
+#question(
+  [On prend trois joueurs $A, B, C$ qui se battent en duel. Lors d'un duel, entre $B$ et $C$ par exemple, chaque joueur a 1 chance 2 sur deux de gagner et 1 chance sur 2 de perdre, le perdant d'un duel sort du terrain et celui qui ne jouait pas entre pour faire un duel avec le gagnant précédent. Un joueur gagne le tournoi si il réalise $l in NN$ victoire d'affiler. $A$ et $B$ commencent.
 
-  1) On pose $l = 2$, determiner la probabilité que $A$ gagne, que $B$ gagne et que $C$ gagne.
+    1) On pose $l = 2$, determiner la probabilité que $A$ gagne, que $B$ gagne et que $C$ gagne.
 
-  2) $ambulance$ $l$ n'est plus fixé. Déterminer un développement asymptotique, en fonction de $l$, de la probabilité $p_l$ que $C$ gagne quand $l$ tend vers $+ oo$
-])
+    2) $ambulance$ $l$ n'est plus fixé. Déterminer un développement asymptotique, en fonction de $l$, de la probabilité $p_l$ que $C$ gagne quand $l$ tend vers $+ oo$
+  ],
+)
 
 #indic[
   1) Que se passe-t-il après avoir fait 3 duels ?
@@ -38,11 +40,13 @@
 
 === Truel - $mushroom$
 
-#question([On prend 3 joueurs $A, B, C$ tirant au pistolet les uns sur les autres. $A$ touche avec une probabilité $2 / 3$, $B$ avec une probabilité $1 / 2$ et $C$ $1 / 3$. A chaque tour chacun vise le joueur le plus dangereux encore en vie (Au premier tour, $B$ et $C$ vise $A$ et $A$ vise $B$).
+#question(
+  [On prend 3 joueurs $A, B, C$ tirant au pistolet les uns sur les autres. $A$ touche avec une probabilité $2 / 3$, $B$ avec une probabilité $1 / 2$ et $C$ $1 / 3$. A chaque tour chacun vise le joueur le plus dangereux encore en vie (Au premier tour, $B$ et $C$ vise $A$ et $A$ vise $B$).
 
-  Determiner la probabilité que chaque joueur gagne ainsi que celle que le jeu finisse sans vainqueur.
-  #pagebreak()
-])
+    Determiner la probabilité que chaque joueur gagne ainsi que celle que le jeu finisse sans vainqueur.
+    #pagebreak()
+  ],
+)
 
 #indic[
   En notant $A B C_n$ (resp. $A B_n$, $A C_n$, $B C_n$) les événements $A$, $B$ et $C$ (resp. $A$ et $B$, $A$ et $C$, $B$ et $C$) sont vivants au tour $n$, exprimer les événements $A$, $B$, $C$ gagne au tour $n$ grâce a des unions et des intersections.
@@ -50,26 +54,32 @@
 
 === Dédé - $ambulance$
 
-#question([On prend un dé canonique à $3$ faces. On le lance et on ajoute un dé canonique à $x_1$ faces où $x_1$ est le résultat du lancé. On relance les deux dés et on ajoute un nouveau dé canonique à $x_2$ faces où $x_2$ est la somme des résultats des deux dés. On définit ainsi la suite $x_n$ comme la somme des $n$ dés du $n^"ème"$ lancer et on définit de plus la variable aléatoire $X_n = x_n$.
+#question(
+  [On prend un dé canonique à $3$ faces. On le lance et on ajoute un dé canonique à $x_1$ faces où $x_1$ est le résultat du lancé. On relance les deux dés et on ajoute un nouveau dé canonique à $x_2$ faces où $x_2$ est la somme des résultats des deux dés. On définit ainsi la suite $x_n$ comme la somme des $n$ dés du $n^"ème"$ lancer et on définit de plus la variable aléatoire $X_n = x_n$.
 
-  1) Déterminer la loi de $X_n$ pour $n in NN^*$ ainsi que son espérance et sa variance.
+    1) Déterminer la loi de $X_n$ pour $n in NN^*$ ainsi que son espérance et sa variance.
 
-  2) Généraliser pour un dé initial canonique à $p in NN^*$ faces.
-])
+    2) Généraliser pour un dé initial canonique à $p in NN^*$ faces.
+  ],
+)
 
 === $frak(S)_n$ Probabilisé - $baby$
 
-#question([On considère l'ensemble $frak(S)_n$ dans lequel on tire des éléments de manière uniforme. On prend $F$ la variable aléatoire qui compte le nombre de points fixes et $C$ la variable aléatoire qui compte le nombre de cycles dans la décomposition en cycles disjoints.
+#question(
+  [On considère l'ensemble $frak(S)_n$ dans lequel on tire des éléments de manière uniforme. On prend $F$ la variable aléatoire qui compte le nombre de points fixes et $C$ la variable aléatoire qui compte le nombre de cycles dans la décomposition en cycles disjoints.
 
-  1) Determiner $EE(F)$
+    1) Determiner $EE(F)$
 
-  2) $mushroom$ Determiner $EE(C)$
-])
+    2) $mushroom$ Determiner $EE(C)$
+  ],
+)
 
 === Le quart de ce qu'on ne vous souhaite pas - $mushroom$
 
-#question([Soit $G$ un groupe fini non commutatif. Montrer que la probabilité que $2$ éléments pris au hasard dans $G$ commutent est majorée par $5 / 8$.
-])
+#question(
+  [Soit $G$ un groupe fini non commutatif. Montrer que la probabilité que $2$ éléments pris au hasard dans $G$ commutent est majorée par $5 / 8$.
+  ],
+)
 
 #indic[
   Majorer les cardinaux du centre de $G$ et des commutants des éléments de $G$.
@@ -87,10 +97,10 @@
 ]
 
 #correction[
-  Fixons $k in NN,  k > 1$
+  Fixons $k in NN, k > 1$
   On prend:
   $
-    cal(R)_n :=  {(a_1, dots, a_k) in eintl 1; n eintr ^k | a_1 and dots and a_k = 1} \
+    cal(R)_n := {(a_1, dots, a_k) in eintl 1; n eintr^k | a_1 and dots and a_k = 1} \
     r_n := cal(R)_n / n^k
   $
 
@@ -99,7 +109,7 @@
   On prend de plus:
   $
     cal(P)_n := cal(P) inter eintl 1, n eintr = {p_1, dots, p_pi(n)} \
-    cal(D)_(h; n) := {(a_1, dots, a_k) in eintl 1, n eintr ^k | forall i in eintl 1, k eintr, h divides a_i}
+    cal(D)_(h; n) := {(a_1, dots, a_k) in eintl 1, n eintr^k | forall i in eintl 1, k eintr, h divides a_i}
   $
 
   On recconait que:
@@ -126,9 +136,9 @@
   Où $mu$ est la fonction de Möbius (voir Arithmétique).
 
   On a d'abord que l'absence du terme en $d = 1$ (soit $p_i_1 dots p_i_l = 1$ dans $(i)$) correspond dans $(i i)$. On a ensuite que si $d in eintl 1, n eintr$, $d$ est de la forme
-  $d = p_i_1 ^r_i_1 dots p_i_l ^r_i_l$ avec $p_i_1, dots, p_i_l in cal(P)_n$. \
+  $d = p_i_1^r_i_1 dots p_i_l^r_i_l$ avec $p_i_1, dots, p_i_l in cal(P)_n$. \
   Notons que si $d$ contient un facteur carré (absent de $(i)$), alors $mu(d) = 0$ et le terme est donc absent de $(i i)$.
-  On peut donc se contenter de regarder les $d$ de la forme $d = p_i_1 dots p_i_l$ avec les $p_i_j$ tous distincts.   
+  On peut donc se contenter de regarder les $d$ de la forme $d = p_i_1 dots p_i_l$ avec les $p_i_j$ tous distincts.
   On a donc que $mu(d) = (-1)^l$. Le signe $-$ permet donc d'avoir le $(-1)^(l+1)$. Finalement on a bien que:
   $
     |overline(cal(R)_n)| = sum_(l = 1)^pi(n) (-1)^(l+1) sum_(1 <= i_1 < dots < i_l <= n) floor(n/(p_i_1dots p_i_l))^k =
@@ -137,8 +147,8 @@
 
   On a donc que:
   $
-    |cal(R)_n| &= sum_(d = 1)^n mu(d) floor(n/d)^k \
-    r_n &= 1/n^k sum_(d = 1)^n mu(d) floor(n/d)^k
+    |cal(R)_n| & = sum_(d = 1)^n mu(d) floor(n/d)^k \
+           r_n & = 1/n^k sum_(d = 1)^n mu(d) floor(n/d)^k
   $
 
   On pose:
@@ -156,36 +166,37 @@
   On conclus en calculant la limite de $(s_n)$. On a que, pour $d in NN^*, |mu(d)|<=1$, ainsi, $(s_n)$ converge absolument.
   On note $s$ la série et on regarde $zeta(k) s$
   $
-    zeta(k) s = (sum_(m >= 1) 1/m^k) (sum_(d >= 1) mu(d)/d^k) 
+    zeta(k) s = (sum_(m >= 1) 1/m^k) (sum_(d >= 1) mu(d)/d^k)
   $
   Comme tout converge absolument, par Fubini,
   $
-    zeta(k) s = sum_((d, m) in NN^* ^2) mu(d)/(m d)^k 
+    zeta(k) s = sum_((d, m) in NN^*^2) mu(d)/(m d)^k
   $
 
   On prend maintenant
   $
-    cal(A) := {(a,b) in NN^* ^2 | a divides b}  $
+    cal(A) := {(a,b) in NN^*^2 | a divides b}
   $
-    phi: NN^* ^2 &earrow cal(A)  \
-         (x, y) &asarrow (x, x y)
+  $
+    phi: NN^*^2 & earrow cal(A) \
+         (x, y) & asarrow (x, x y)
   $
 
   On a que $phi$ est une bijection (on pourra expliciter la réciproque pour s'en convaincre).
   En appliquant $phi^(-1)$ aux indice de la somme, on a donc:
   $
-    zeta(k) s &= sum_((d, l) in NN* ^2, d divides l) mu(d)/l^k \
-    &= sum_(l >= 1) 1/l^k sum_(d divides l) mu(d) \
-    &= sum_(l >= 1) 1/l^k delta_(1, l) = 1
+    zeta(k) s & = sum_((d, l) in NN*^2, d divides l) mu(d)/l^k \
+              & = sum_(l >= 1) 1/l^k sum_(d divides l) mu(d) \
+              & = sum_(l >= 1) 1/l^k delta_(1, l) = 1
   $
 
   On a donc que $zeta(k) s = 1$, soit $s = 1/zeta(k)$. On en déduit le résultat final:
   $
     r_n lim_(n --> +oo) 1/zeta(k)
   $
-  
 
-  
+
+
 ]
 
 === Une séquence préférée - $chocolate$
@@ -287,8 +298,8 @@
 
   Or,
   $
-    PP(F + S = k) &= PP(F = 1)PP(S = k - 1) + dots + PP(F = k-1)PP(S = 1) \
-    &= p_0 q_(k-2) + dots + p_(k - 2)q_0
+    PP(F + S = k) & = PP(F = 1)PP(S = k - 1) + dots + PP(F = k-1)PP(S = 1) \
+                  & = p_0 q_(k-2) + dots + p_(k - 2)q_0
   $
   On introduit:
   $
@@ -299,9 +310,9 @@
   On a donc que $PP(F + S = k)$ est exactement le coefficient devant $X^(k - 2)$ dans $P Q$.
   Ainsi, comme $F + S sui cal(U)(eintl 2, 12 eintr)$,
   $
-    P Q &= sum_(k = 0)^10 1 / 11 X^k \
-    &= 1 / 11 sum_(k = 0)^10 X^k \
-    &= 1 / 11 (X^11 - 1) / (X - 1)
+    P Q & = sum_(k = 0)^10 1 / 11 X^k \
+        & = 1 / 11 sum_(k = 0)^10 X^k \
+        & = 1 / 11 (X^11 - 1) / (X - 1)
   $
 
   On remarque que $P$ et $Q$ sont de degrès $5$, ainsi ils admettent tout deux au moins une racine dans $RR$, on a donc que $P Q$ aussi admet au moins une racine dans $RR$.
@@ -314,12 +325,12 @@
 
 #question[
   On prend $p in cal(P)$ et on note $I_n$ la probabilité qu'un polynome tiré au hasard dans $FF_p [X]$ soit
-  irréductible, unitaire et de degrès au plus $n$.
+  irréductible, unitaire et de degré au plus $n$.
 
-  Determiner un dévelopement asymptotique à $1$ terme de $I_n$ quand $n$ tend vers l'infini. 
+  Determiner un dévelopement asymptotique à $1$ terme de $I_n$ quand $n$ tend vers l'infini.
 ]
 
 #indic[
-  En notant $N_p ^n$ le nombre de polynome irrécutible unitaire de degré $n$, exprimer $N_p ^n$ a l'aide d'une convolution de Dirichlet.
+  En notant $N_p^n$ le nombre de polynome irrécutible unitaire de degré $n$, exprimer $N_p^n$ a l'aide d'une convolution de Dirichlet.
 ]
 
