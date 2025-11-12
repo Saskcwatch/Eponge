@@ -39,9 +39,9 @@
 === Un gros voisinage - $ramranch$
 
 #question[
-  On considère $M_n (CC)$ munis de ça topologie usuelle.
+  On considère $M_n (CC)$ muni d'une norme subordonée et de la topologie qui en découle.
 
-  1) Montre que $GL_n (CC)$ est connexe par arcs.
+  1) Montre que $GL_n (CC)$ est un ouvert connexe par arcs.
 
-  2) Soit $r in RR_+ ^*$. Montrer que $angle.l cal(B)(I_n, r) angle.r = GL_n (CC)$ (On regarde le groupe multiplicatif engendré).
+  2) Soit $r in RR_+ ^*$ tel que $cal(B)(I_n, r) subset.eq GL_n (CC)$. Montrer que $angle.l cal(B)(I_n, r) angle.r = GL_n (CC)$ (On regarde le groupe multiplicatif engendré).
 ]

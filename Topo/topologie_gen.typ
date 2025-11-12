@@ -44,20 +44,24 @@
   $
     "Si" (U_i)_(i in I) in cal(T)^I "vérifie" K subset.eq union.big_(i in I) U_i, "alors il existe" J subset.eq I "fini tel que" K subset.eq union.big_(j in J) U_j.
   $
-
+  \ \ 
 ]
+
+
 
 === Rocailleux - $hammer$ / $gorilla$
 
 #question[
-  Soit $X$ un espace topologique kompact et $E := cal(C)^0(X, RR)$ muni de sa structure d'algèbre normé par $norm(dot)_oo$. On dit d'une sous algèbre (unitaire) $cal(A)$ de $E$ qu'elle sépare les points si:
+  Soit $X$ un espace topologique kompact et $E := cal(C)^0(X, RR)$ muni de sa structure d'espace vectoriel normé par $norm(dot)_oo$.
+  On a de plus que $E$ est une algèbre d'unité $x asarrow 1$.
+  On dit d'une sous algèbre (unitaire) $cal(A)$ de $E$ qu'elle sépare les points si:
   $
     forall x != y in X, exists f in cal(A) "tq" f(x) != f(y).
   $
 
-  1) On note
+  1) On note pour $a < b in RR$:
   $
-    g: [0, 1] & earrow RR \
+    g: [a, b] & earrow RR \
             x & asarrow abs(x)
   $
 
@@ -66,11 +70,44 @@
     norm(P_n - g)_oo lim_(n --> +oo) 0
   $
 
-  On prend $X = [0,1] subset.eq RR$ muni de sa topologie usuelle et $cal(A)$ l'ensemble des fonctions polynomiales de $X$ dans $RR$.
+  // On prend $X = [0,1] subset.eq RR$ muni de sa topologie usuelle et $cal(A)$ l'ensemble des fonctions polynomiales de $X$ dans $RR$.
 
-  2) Montrer que $cal(A)$ sépare les points.
+  // 2) Montrer que $cal(A)$ sépare les points.
+
+  // 3) Montrer que $cal(A)$ est dense.
+
+  2) Soit $cal(A)$ une sous-algèbre de $E$ qui sépare les points. Montrer que:
+
+    1. $overline(cal(A))$ est une sous algèbre de $cal(C)^0 (X, RR)$.
+
+    2. Si $f in overline(cal(A))$ et $P in RR[X]$,
+    $ P compose f in overline(cal(A)) quad "et" quad abs(f) in overline(cal(A)) $
+
+    3. Si $f_1, ... , f_n in overline(cal(A))$,
+    $ max(f_1, ... , f_n) in overline(cal(A)) quad "et" quad min(f_1, ... , f_n) in overline(cal(A)) $ 
+
+    4. Si $a != b in X$ et $alpha != beta in RR$, on dispose de $f in cal(A)$ tel que:
+    $ f(a) = alpha quad f(b) = beta $
 
   3) Montrer que $cal(A)$ est dense.
 
-  4) Généraliser.
+]
+
+=== Pour brillier en société - $mushroom$
+
+#question[
+  Pour $a, b in ZZ$, on note $S(a,b) := {a + n b | n in ZZ}$.
+
+  On dit d'un ensemble $cal(U)  subset.eq ZZ$ qu'il est ouvert si il est réunion de $S(a,b)$.
+  Formellement, on considère $(ZZ, cal(T))$ où:
+  $
+    cal(U) in cal(T) "ssi" space.quarter exists (a_i)_(i in I), (b_i)_(i in I) in ZZ^I "tq" space.quarter cal(U) = union.big_(i in I) S(a_i, b_i). 
+  $
+
+  1) Montrer que $cal(T)$ définis bien une topologie sur $ZZ$.
+
+  2) En déduire qu'il existe une infinité de nombre premier.
+] 
+#indic[
+  2) On pourra constater que pour $a,b in ZZ$, $S(a, b)$ est fermé et que tout sous ensemble finis non vide de $ZZ$ ne peut pas être ouvert. 
 ]
