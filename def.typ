@@ -17,6 +17,7 @@
 #let ln = $log$
 #let emptyset = $diameter$
 #let img = $op("Im")$
+#let GL = $op("GL")$
 
 
 

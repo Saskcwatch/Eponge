@@ -95,8 +95,8 @@
 
 \
 *Convention :* \
-- Les anneaux sont supposées unitaire
-- Les corps sont commutatifs
+- Les anneaux et les algèbres sont supposées unitaire.
+- Les corps sont commutatifs.
 - Le "dé canonique à $n$ faces" est l'unique (à isomorphisme près) dé équilibré à $n$ faces numérotées de $1$ à $n$.
 
 

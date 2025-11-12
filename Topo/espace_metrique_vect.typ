@@ -35,3 +35,13 @@
 
   2) Soit $P in CC[X]$ non constant et $cal(U)$ un ouvert de $CC$ pour la topologie usuelle. Montrer que $P(cal(U))$ est ouvert.
 ]
+
+=== Un gros voisinage - $ramranch$
+
+#question[
+  On considère $M_n (CC)$ munis de ça topologie usuelle.
+
+  1) Montre que $GL_n (CC)$ est connexe par arcs.
+
+  2) Soit $r in RR_+ ^*$. Montrer que $angle.l cal(B)(I_n, r) angle.r = GL_n (CC)$ (On regarde le groupe multiplicatif engendré).
+]

@@ -15,14 +15,14 @@ On identifie les polynômes de $CC[X]$ et les fonctions polynomiales de $CC$ dan
 2) Est-ce un morphisme d'anneau ?
 ]
 
-=== - Minimalitisme - $mushroom$
+=== Minimalitisme - $mushroom$
 
 #question[
   Soit $P in QQ[X]$ et $alpha in CC^*$ tel que:
   $
     (X - alpha)^m divides P
   $
-  Avec $m > deg(P)/2$. Montrer que $alpha in QQ$
+  Avec $m > deg(P)/2$. Montrer que $alpha in QQ$.
 ]
 
 #indic[

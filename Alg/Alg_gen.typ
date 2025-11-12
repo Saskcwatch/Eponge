@@ -263,7 +263,7 @@ $
   On considére $A$ un anneau fini tel que tout élément de $A$ soit soit nilpotent soit idempotent:
   $
     forall a in A, a^2 = a "ou" exists n in NN^*, a^n = 0_A
-  $.
+  $
 
   1) Montrer que pour tout $a in A, a^2 = a$ puis montrer que $A$ est commutatif.
 
