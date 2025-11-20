@@ -176,3 +176,9 @@ $2$ est un résidus quadratique modulo $p$ ssi $p eq.triple plus.minus 1 [8]$
 
   3) Calculer $G(1)^(q-1)$ dans $ZZ[zeta]\/angle.l q angle.r$ et conclure.
 ]
+
+=== Petit pas - $hammer / ram$
+
+#question[
+  Soit $f,g in QQ[X]$ tels que $f(QQ) = g(QQ)$. Montrer que $deg(f) = deg(g)$.  
+]
