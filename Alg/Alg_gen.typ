@@ -14,6 +14,7 @@ $
 2. #underline[Orbite]:
 Soient $G$ un groupe, $X$ un ensemble et $dot$ une action de $G$ sur $X$.
 On appelle orbite de $x in X$ l'ensemble $ O(x) := {g dot x| g in G} $
+On la note parfois $G dot x$
 
 3. #underline[Stabilisateur]:
 Soient $G$ un groupe, $X$ un ensemble et $dot$ une action de $G$ sur $X$.
@@ -42,14 +43,14 @@ UU_oo := union.big_(n in NN) UU_n $
 Montrer que $UU_infinity$ est isomorphe en tant que groupe à $QQ\/ZZ$
 ]
 
-=== 42 ! - $moyai$
+=== 42 ! - $hammer$
 
 #question[
   Soit $G$ un groupe d'ordre $42$. Montrer que $G$ admet un sous groupe d'ordre $6$.
 ]
 
 #indic[
-  Utiliser les théorèmes de Sylow, et éventuellement un produit semi-direct.
+  Utiliser les théorèmes de Sylow pour $7$.
 ]
 
 === $horn + tree = oo$ - $baby$
@@ -268,4 +269,19 @@ $
   1) Montrer que pour tout $a in A, a^2 = a$ puis montrer que $A$ est commutatif.
 
   2) Montrer que $A iso FF_2 ^n$ pour un certain $n$. 
+]
+
+=== Le vrai postulat de Bertrand - $gorilla$
+
+#question[
+  Soit $n >= 5$. On considère l'action de $frak(S)_n$ sur $CC[X_1, ..., X_n]$ définis par, pour $sigma in frak(S)_n, P in CC[X_1, ..., X_n]$:
+  $
+    sigma dot P = P(X_sigma(1), ..., X_sigma(n))
+  $
+
+  Montrer que pour $P in CC[X_1, ..., X_n]$, soit $|frak(S)_n dot P| = 1$, soit $|frak(S)_n dot P| = 2$, soit $|frak(S)_n dot P| >= n$.
+]
+
+#indic[
+  On pourra s'interresser aux sous groupes normaux de $frak(S)_n$ quand $n >= 5$.
 ]
