@@ -75,3 +75,11 @@
 #indic[
   Borner $f$ et regarder son comportement à l'infini.
 ]
+
+=== $f^2 = f^2$ - $chocolate$
+
+#question[
+  1) Trouver toutes les fonctions $f in cal^1 (RR)$ tels que $f compose f = f times f$.
+
+  2) $ambulance$ Pareil mais en ne supposant plus que $f$ continue.
+]
