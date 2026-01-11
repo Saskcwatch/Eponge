@@ -49,9 +49,9 @@ Trouver les deux premiers termes du DA de $(x_n)$]
 === Tuproc - $moyai$
 
 #question[
-  Soit $P in (RR \ QQ)[X]$, $deg(P) >= 2$ et $f in cal(C)^0 (RR, CC)$. On suppose de plus $f$ $1$-périodique. Montrer que:
+  Soit $P in (RR \\ QQ)[X]$, $deg(P) >= 2$ et $f in cal(C)^0 (RR, CC)$. On suppose de plus $f$ $1$-périodique. Montrer que:
   $
-    1/n sum_(k=1)^n f(P(n)) lim_(n --> +oo) integral_0^1 f
+    1/n sum_(k=1)^n f(P(k)) lim_(n --> +oo) integral_0^1 f
   $ 
 ]
 
