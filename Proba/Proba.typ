@@ -87,7 +87,18 @@
 
 === Zeta ?!? - $moyai$
 
-#question([Montrer que la probabilité que $k > 1$ entiers de $NN$ soient premiers entre eux est $1/zeta(k)$])
+#question[
+// Montrer que la probabilité que $k > 1$ entiers de $NN$ soient premiers entre eux est $1/zeta(k)$
+  Soit $k in NN^*$, pour $n in NN^*$ on note $X_1, ..., X_k$ des variables aléatoires indépendantes suivant la loi uniforme sur $[|1, n|]$. On note de plus:
+  $
+  r_n := PP {X_1 and X_2 and ... and X_k = 1}
+  $
+
+  Montrer que:
+  $
+    r_n lim_(n --> +oo) 1/zeta(k)
+  $
+]
 
 #indic[
   On poura introduire $cal(D)_(h; n) := {(a_1, dots, a_k) in eintl 1, n eintr^k | forall i in eintl 1, k eintr, h divides a_i }$
@@ -101,10 +112,11 @@
   On prend:
   $
     cal(R)_n := {(a_1, dots, a_k) in eintl 1; n eintr^k | a_1 and dots and a_k = 1} \
-    r_n := cal(R)_n / n^k
   $
-
-  On cherche donc la limite de $(r_n)$.
+  On remarque que:
+  $
+    r_n = |cal(R)_n|/n^k
+  $
 
   On prend de plus:
   $
@@ -334,3 +346,19 @@
   En notant $N_p^n$ le nombre de polynome irrécutible unitaire de degré $n$, exprimer $N_p^n$ a l'aide d'une convolution de Dirichlet.
 ]
 
+=== More Zeta ! - $ramranch$
+
+#question[
+  Soient $s > 1$ et $X$ une variable aléatoire à valeur dans $NN^*$ de loi définie par:
+  $
+    forall n >= 1, PP {X = n} = n^(-s)/zeta(s)
+  $
+  où $zeta$ est la fonction de Riemann.
+
+  On note de plus $(p_k)_(k>=1)$ la suite croissante des nombres premiers.
+
+  En s'intérressant à $A_k := {p_k divides X}$ montrer que:
+  $
+    1/zeta(s) = product_(k>=1)(1-1/p_k)
+  $
+]
