@@ -1,46 +1,48 @@
-#import "../lib.typ": * 
+#import "../lib.typ": *
 #show: tmpl
 
 
 #question[
-#underline[* Définitions *]
+  #underline[* Définitions *]
 
-1. #underline[Action de groupe]:
-On appelle action de groupe de $(G, star)$ sur un ensemble $X$ une application $dot: G times X arrow.r.long X$ vérifiant :
-$
-(i) quad & forall x in X, e dot x = x \
-(i i) quad & forall (g, h) in G^2, g dot (h dot x) = (g star h) dot x $
+  1. #underline[Action de groupe]:
+  On appelle action de groupe de $(G, star)$ sur un ensemble $X$ une application $dot: G times X arrow.r.long X$ vérifiant :
+  $
+      (i) quad & forall x in X, e dot x = x \
+    (i i) quad & forall (g, h) in G^2, g dot (h dot x) = (g star h) dot x
+  $
 
-2. #underline[Orbite]:
-Soient $G$ un groupe, $X$ un ensemble et $dot$ une action de $G$ sur $X$.
-On appelle orbite de $x in X$ l'ensemble $ O(x) := {g dot x| g in G} $
-On la note parfois $G dot x$
+  2. #underline[Orbite]:
+  Soient $G$ un groupe, $X$ un ensemble et $dot$ une action de $G$ sur $X$.
+  On appelle orbite de $x in X$ l'ensemble $ O(x) := {g dot x| g in G} $
+  On la note parfois $G dot x$
 
-3. #underline[Stabilisateur]:
-Soient $G$ un groupe, $X$ un ensemble et $dot$ une action de $G$ sur $X$.
-On appelle stabilisateur de $x in X$ l'ensemble
-$
-  G_x := {g in G | g dot x = x}
-$
+  3. #underline[Stabilisateur]:
+  Soient $G$ un groupe, $X$ un ensemble et $dot$ une action de $G$ sur $X$.
+  On appelle stabilisateur de $x in X$ l'ensemble
+  $
+    G_x := {g in G | g dot x = x}
+  $
 
-On vérifie aisement que $G_x$ est un sous groupe de $G$.
+  On vérifie aisement que $G_x$ est un sous groupe de $G$.
 
-4. #underline[Produit semi direct]:
-Soient $G, H$ deux groupes et $f$ un morphisme de $H$ dans $"Aut"(G)$.
-On appelle produit semi-direct de $G$ par $H$ relativement à $f$ l'ensemble $K = G times H$ muni de la structure de groupe :
-$(g_1, h_1) (g_2, h_2) = (g_1 f(h_1)(g_2), h_1 h_2)$
+  4. #underline[Produit semi direct]:
+  Soient $G, H$ deux groupes et $f$ un morphisme de $H$ dans $"Aut"(G)$.
+  On appelle produit semi-direct de $G$ par $H$ relativement à $f$ l'ensemble $K = G times H$ muni de la structure de groupe :
+  $(g_1, h_1) (g_2, h_2) = (g_1 f(h_1)(g_2), h_1 h_2)$
 
-Ce groupe est noté $G times.r_f H$ ou $G times.r H$
+  Ce groupe est noté $G times.r_f H$ ou $G times.r H$
 
 ]
 
 === Un isomorphisme - $baby$
 
 #question[On prend
-$ 
-UU_oo := union.big_(n in NN) UU_n $
+  $
+    UU_oo := union.big_(n in NN) UU_n
+  $
 
-Montrer que $UU_infinity$ est isomorphe en tant que groupe à $QQ\/ZZ$
+  Montrer que $UU_infinity$ est isomorphe en tant que groupe à $QQ\/ZZ$
 ]
 
 === 42 ! - $hammer$
@@ -64,13 +66,13 @@ Montrer que $UU_infinity$ est isomorphe en tant que groupe à $QQ\/ZZ$
 === Crucialement radical - $gorilla$
 
 #question[Montrer que pour $n in NN \\ {0, 1}$
-$
-sum_(k = 0)^n sqrt(k) in.not QQ
-$
+  $
+    sum_(k = 0)^n sqrt(k) in.not QQ
+  $
 ]
 
 #indic[
-  Prendre $p_1, dots , p_n$ les $n$ premier nombre premier et considérer $QQ[sqrt(p_1), dots, sqrt(p_n)]$ 
+  Prendre $p_1, dots , p_n$ les $n$ premier nombre premier et considérer $QQ[sqrt(p_1), dots, sqrt(p_n)]$
 ]
 
 
@@ -78,13 +80,13 @@ $
 
 #question[
   Soit $n >= 1$. On se place dans l'espace vectoriel $RR^n$ muni de sa structure euclidienne canonique.
-\
+  \
   On appelle hypercube l'ensemble $C = {-1, 1}^n$.
-  
+
   On note $G$ le groupe des isométries qui fixent $C$, c'est à dire $ G = {f in cal(L)(RR^n) | f(C) = C} $
 
-  1) Montrer que $G$ est isomorphe à $UU_2^n times.r frak(S)_ n $.
-\
+  1) Montrer que $G$ est isomorphe à $UU_2^n times.r frak(S)_n$.
+  \
 
   2) On appelle facette de $C$ une face de dimension $n - 1$. On admet qu'il y en a $2n$.
   Calculer le nombre de manières de numéroter les facettes d'un dé hypercubique de dimension $n$ par $eintl 1; 2n eintr$ de manière injective, à isométrie près.
@@ -107,7 +109,9 @@ $
 
   #underline[Construction de $phi$] : Soit $f in G$
   \ Pour tout $i in eintl 1; n eintr$, comme $f in G$, il existe $a_1, dots.c, a_n, b_1, dots.c, b_n in UU_2$ tels que:
-  $ f vec(1, dots.v, 1) = sum_(k=1)^n a_k e_k quad "et" quad f vec(1, dots.v, 1, -1, 1, dots.v, 1) = sum_(k=1)^n b_k e_k $
+  $
+    f vec(1, dots.v, 1) = sum_(k=1)^n a_k e_k quad "et" quad f vec(1, dots.v, 1, -1, 1, dots.v, 1) = sum_(k=1)^n b_k e_k
+  $
 
   Par différence, $ 2 f(e_i) = sum_(k=1)^n (a_k - b_k) e_k $
 
@@ -115,12 +119,12 @@ $
 
   Donc il existe un unique $j_i in eintl 1; n eintr$ tel que $a_(j_i) - b_(j_i) != 0$.\
   En posant $c_i = (a_(j_i) - b_(j_i)) / 2 in UU_2$, on a $f(e_i) = c_i e_(j_i)$
-\
-\
+  \
+  \
   Comme $f(RR^n)=RR^n$, $(f(e_1), dots.c, f(e_n))$ est une base de $RR^n$.\
   Donc les $j_i$ sont tous distincts.
 
-  Il existe donc $sigma in frak(S)_n$ telle que pour tout $i in eintl 1; n eintr$, $i = sigma(j_i)$ \ 
+  Il existe donc $sigma in frak(S)_n$ telle que pour tout $i in eintl 1; n eintr$, $i = sigma(j_i)$ \
   On pose $beta_i = c_(sigma(i))$.
 
   \
@@ -135,7 +139,7 @@ $
   - Soient $f, g in G$. On pose $((beta_1, dots.c, beta_n), sigma^(-1)) = phi(f) quad "et" quad ((gamma_1, dots.c, gamma_n), pi^(-1)) = phi(g)$ \
     Pour tout $i in eintl 1; n eintr$, $f compose g(e_i) = f(gamma_(pi^(-1)(i)) e_(pi^(-1)(i))) = gamma_(pi^(-1)(i)) beta_(sigma^(-1)(pi^(-1)(i))) e_(sigma^(-1)(pi^(-1)(i)))$\
     Donc $phi(f compose g) = ((beta_1 gamma_(sigma(1)), dots.c, beta_n gamma_(sigma(n))), sigma^(-1) pi^(-1)) = phi(f)phi(g)$
-  
+
     $phi$ est bien un morphisme.
 
   - Pour $((beta_1, dots.c, beta_n), sigma^(-1)) in UU_2^n times frak(S)_n$, on vérifie aisément que l'application définie par $f(e_i) = beta_(sigma^(-1)(i)) e_(sigma^(-1)(i))$ est une ismétrie de $G$.\
@@ -154,12 +158,12 @@ $
   \ Donc $G tilde.eq UU_2^n times.r frak(S)_n$
 
 
-\ \
+  \ \
   2) On repère la face inclue dans  l'hyperplan d'équation $x_i = a$ par $(a, i) in UU_2 times eintl 1; n eintr$.
   \
   Alors, un étiquetage des faces est une application bijective de $UU_2 times eintl 1; n eintr$ dans $eintl 1; 2 n eintr$
-  
-  Les isométries de $UU_2^n times.r frak(S)_n tilde.eq G$ agissent alors sur $E := "Bij"(F)(UU_2 times eintl 1; n eintr, eintl 1; 2 n eintr)$ par : 
+
+  Les isométries de $UU_2^n times.r frak(S)_n tilde.eq G$ agissent alors sur $E := "Bij"(F)(UU_2 times eintl 1; n eintr, eintl 1; 2 n eintr)$ par :
   $ ((beta_1, dots.c, beta_n), sigma^(-1)) dot f = ((a, i) mapsto.long f(a beta_(sigma^(-1)(i)), sigma^(-1)(i))) $
 
   \
@@ -231,7 +235,7 @@ $
 ]
 
 #indic[
-  1) Compter les bases de $FF_p ^n$.
+  1) Compter les bases de $FF_p^n$.
 
   2)
   1. ...
@@ -250,7 +254,7 @@ $
   1) Traiter le cas $G = (ZZ / (n ZZ), +)$ pour $n in NN^*$.
 
   2) $ambulance$ Traiter le cas $G = frak(S)_n$ pour $n in NN^*$.
-  
+
   3) $ambulance$ Traiter le cas d'un groupe abélien quelconque.
 ]
 
@@ -268,7 +272,7 @@ $
 
   1) Montrer que pour tout $a in A, a^2 = a$ puis montrer que $A$ est commutatif.
 
-  2) Montrer que $A iso FF_2 ^n$ pour un certain $n$. 
+  2) Montrer que $A iso FF_2^n$ pour un certain $n$.
 ]
 
 === Le vrai postulat de Bertrand - $gorilla$
@@ -280,8 +284,42 @@ $
   $
 
   Montrer que pour $P in CC[X_1, ..., X_n]$, soit $|frak(S)_n dot P| = 1$, soit $|frak(S)_n dot P| = 2$, soit $|frak(S)_n dot P| >= n$.
+  #pagebreak()
 ]
 
 #indic[
   On pourra s'interresser aux sous groupes normaux de $frak(S)_n$ quand $n >= 5$.
+]
+
+=== Une caractéristique surprenante - $chocolate$
+
+#question[
+  Soient $KK$ un corps et $(a_1, dots.c, a_(27)) in (KK^*)^27$. \
+  On pose $ b_i := sum_(j != i) a_j $
+
+  Montrer que si $(b_1, dots.c, b_(27))$ est une permutation de $(a_1, dots.c, a_(27))$, alors la caractéristique de $KK$ est $2$ ou $5$
+]
+
+#indic[
+  Calculer $ sum_(i = 1)^(27) b_i $.
+  Qu'en déduire lorsque $KK$ n'est pas de caractéristique $5$ ?
+]
+
+#correction[
+  On suppose $(b_1, dots.c, b_(27)) = (a_(sigma(1)), dots.c, a_(sigma(27)))$ avec $a in frak(S)_(27)$.
+  On note $S = sum_(i = 1)^(27) a_i$.
+
+  Alors, $ S = sum_(i=1)^(27) b_i = 26 S $
+  Donc $25 S = 0$.
+
+  \
+  Supposons $KK$ de caractéristique différente de $5$.
+  \ On a alors $S = 0$ puis $a_i = -b_i = -a_(sigma(i))$ pour tout $i$.
+
+  $27$ impair donc dans la décomposition de $sigma$ en produit de cycles, il existe un cycle de longueur impair.
+  Notons donc $k$ un élément appartenant à un tel cycle, de longueur $l$.
+
+  Alors, $a_i = (-1)^(l) a_(sigma^l (i)) = - a_i$.
+  Comme $a_i != 0$, $2 = 0$ dans $KK$ puis $KK$ est de caractéristique $2$.
+  #align(right, $square.filled$)
 ]

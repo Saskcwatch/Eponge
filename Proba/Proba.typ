@@ -88,10 +88,10 @@
 === Zeta ?!? - $moyai$
 
 #question[
-// Montrer que la probabilité que $k > 1$ entiers de $NN$ soient premiers entre eux est $1/zeta(k)$
+  // Montrer que la probabilité que $k > 1$ entiers de $NN$ soient premiers entre eux est $1/zeta(k)$
   Soit $k in NN^*$, pour $n in NN^*$ on note $X_1, ..., X_k$ des variables aléatoires indépendantes suivant la loi uniforme sur $[|1, n|]$. On note de plus:
   $
-  r_n := PP {X_1 and X_2 and ... and X_k = 1}
+    r_n := PP {X_1 and X_2 and ... and X_k = 1}
   $
 
   Montrer que:
@@ -221,8 +221,7 @@
 
   3) Quelle est la probabilité de l’événement “la séquence PP apparaît sans que la séquence PF ne soit apparue auparavant” dans cette même configuration ?
 
-  4) $moyai$ On considère à présent un dé à trois faces numéroté par ${1;6;8}$, de probabilité respective $p_1, p_6$ et $p_8$. Quelle est la probabilité de l'événement "la séquence '861' apparaît pour la première fois (dans cet ordre) aux lancer $n - 2, n - 1$ et $n$"
-  #pagebreak()]
+  4) $moyai$ On considère à présent un dé à trois faces numéroté par ${1;6;8}$, de probabilité respective $p_1, p_6$ et $p_8$. Quelle est la probabilité de l'événement "la séquence '861' apparaît pour la première fois (dans cet ordre) aux lancer $n - 2, n - 1$ et $n$"]
 
 
 === Determinant deterministe ? - $ramranch$
