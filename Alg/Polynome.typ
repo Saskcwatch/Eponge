@@ -7,12 +7,13 @@
 
 === Un joli automorphisme - $mushroom$
 
-#question[On définit $ phi: &CC[X] &stretch(->, size: #300%) & cal(F)(CC, CC) \ & P &stretch(arrow.r.bar, size: #300%) &( z barow e^(-z) sum_(n gt.eq.slant 0) P(n)/(n!) z^n)  $
+#question[On définit $ phi: & CC[X] &          stretch(->, size: #300%) & cal(F)(CC, CC) \
+       & P     & stretch(arrow.r.bar, size: #300%) & ( z barow e^(-z) sum_(n gt.eq.slant 0) P(n)/(n!) z^n) $
 
-On identifie les polynômes de $CC[X]$ et les fonctions polynomiales de $CC$ dans $CC$.\
-1) Montrer que $phi$ est un automorphisme d'espace vectoriel.
+  On identifie les polynômes de $CC[X]$ et les fonctions polynomiales de $CC$ dans $CC$.\
+  1) Montrer que $phi$ est un automorphisme d'espace vectoriel.
 
-2) Est-ce un morphisme d'anneau ?
+  2) Est-ce un morphisme d'anneau ?
 ]
 
 === Minimalitisme - $mushroom$
@@ -31,10 +32,10 @@ On identifie les polynômes de $CC[X]$ et les fonctions polynomiales de $CC$ dan
 
 #correction[
   Notons d'abord que $alpha$ est algèbrique sur $QQ$, on note $Pi_alpha$ son polynome minimal.
-  
+
   On prend
   $
-    P = product_(i = 1)^d P_i 
+    P = product_(i = 1)^d P_i
   $
   Avec les $P_i$ irréductible sur $QQ[X]$.
 
@@ -45,7 +46,7 @@ On identifie les polynômes de $CC[X]$ et les fonctions polynomiales de $CC$ dan
   Supposons que $alpha$ racine de multiplicité au moins $2$ de $P_1$.
   On a donc que $(X - alpha) divides P_1 '$, ainsi,
   $
-  Pi_alpha divides P_1 ' divides P_1
+    Pi_alpha divides P_1 ' divides P_1
   $
 
   Cependant, $P_1 '$ divise strictement $P_1$, on a donc que $Pi_alpha$ divise lui aussi strictement $P_1$ ce qui est absurde car on suppose $P_1$ irréductible sur $QQ$.
@@ -57,19 +58,32 @@ On identifie les polynômes de $CC[X]$ et les fonctions polynomiales de $CC$ dan
 
   On recommence avec $P_2$ en divisant $P$ par $P_1$, par réccurence on a que:
   $
-    P = lambda Pi_alpha ^m R
+    P = lambda Pi_alpha^m R
   $
   avec $R in QQ[X]$.
 
-  On a donc que $Pi_alpha ^m divides P$.
+  On a donc que $Pi_alpha^m divides P$.
 
   Montrons que $deg(Pi_alpha) = 1$.
 
-  Supposons $deg(Pi_alpha) >= 2$. On a donc que $deg(Pi_alpha ^m) >= 2 m > deg(P)$. Or, $Pi_alpha ^m divides P$,
+  Supposons $deg(Pi_alpha) >= 2$. On a donc que $deg(Pi_alpha^m) >= 2 m > deg(P)$. Or, $Pi_alpha^m divides P$,
   absurde donc:
   $
-  deg(Pi_alpha) = 1 \
-  <=> alpha in QQ
+    deg(Pi_alpha) = 1 \
+    <=> alpha in QQ
   $
 
+]
+
+=== un théorème bien utile - $chocolate$
+
+#question[
+  Soient $P in CC [X]$ et $H$ un demi-plan de $CC$.
+  \ On suppose que $P'$ admet une racine dans $H$.
+
+  Montrer que $P(H) = CC$
+]
+
+#indic[
+  Utiliser le théorème de Gauss-Lucas pour montrer que si $Q'$ admet une racine dans $H$, alors $Q$ aussi
 ]
