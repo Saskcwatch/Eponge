@@ -157,11 +157,11 @@
 #include "Anal/equa_fidd.typ"
 == Intégration
 #include "Anal/Integration.typ"
-== Série
+== Séries
 #include "Anal/serie.typ"
 
 = Topologie
-== Espace métrique / vectoriel normé
+== Espaces métriques / vectoriels normés
 #include "Topo/espace_metrique_vect.typ"
 == Continuité Linéaire
 #include "Topo/continuité_lin.typ"

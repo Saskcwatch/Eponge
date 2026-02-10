@@ -220,3 +220,30 @@
   Determiner $img(phi)$
 ]
 
+
+=== Une série tout à fait intriguante - $hammer$
+#question[
+  Calculer $ sum_(n = 1)^(+oo) (-1)^(n+1) / (2^n - 1) zeta_("al") (n + 1) $
+]
+
+#indic[
+  Calculer $ sum_(n = 0)^(+oo) (-1)^(k+1) / (k(2^n k + 1)) $
+]
+
+#correction[
+  Notons $S$ la somme.
+  On développe en série: $ 1/(2^n - 1) = 2^(-n) / (1 - 2^(-n)) = sum_(l = 1)^(+oo) 2^(-n l) $
+
+  Par Fubinisations, reconnaissance d'une série connue et renommage des indices, on a:
+  $ S = sum_(n = 1)^(+oo) sum_(k = 1)^(+oo) (-1)^(k+1) / (k(2^n k + 1)) $
+
+  Or, en écrivant $1/(2^n k + 1) = integral_0^1 x^(2^n k)$, puis en échangeant allègrement les opérateurs, on a
+  $
+    sum_(n = 0)^(+oo) sum_(k = 1)^(+oo) (-1)^(k+1) / (k(2^n k + 1)) dif x & = integral_0^1 sum_(n = 0)^(+oo) sum_(k = 1)^(+oo) (-1)^(k+1) / k x^(2^n k) dif x
+    \ & = integral_0^1 sum_(n = 0)^(+oo) ln(1 + x^(2^n)) dif x \ &= integral_0^1 - ln(1 - x) dif x = 1
+  $
+
+  Or, le terme pour $n = 0$ vaut $ sum_(k = 1)^(+oo) (-1)^(k+1) / (k(k + 1)) = 2 ln(2) - 1 $
+
+  D'où $ S = 2 - 2 ln(2) $
+]
