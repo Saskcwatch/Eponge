@@ -222,6 +222,7 @@
 
 
 === Une série tout à fait intriguante - $hammer$
+
 #question[
   Calculer $ sum_(n = 1)^(+oo) (-1)^(n+1) / (2^n - 1) zeta_("al") (n + 1) $
 ]
