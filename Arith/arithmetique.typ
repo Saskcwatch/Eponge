@@ -182,3 +182,23 @@ $2$ est un résidus quadratique modulo $p$ ssi $p eq.triple plus.minus 1 [8]$
 #question[
   Soit $f,g in QQ[X]$ tels que $f(QQ) = g(QQ)$. Montrer que $deg(f) = deg(g)$.  
 ]
+
+=== La meilleur classe - $mushroom monkey$
+
+#question[
+  1) Soit $n in NN^*$. On note $d_0, ..., d_(n-1) in NN$ et
+  $
+    P := sum_(i = 0)^(n-1) X^(d_i) 
+  $.
+
+  Montrer que $1 + X + ... + X^(n-1)$ divise $P$ ssi:
+  $
+  {overline(d_0), ..., overline(d_(n-1))} = ZZ_n
+  $ 
+
+  2) Montrer que $507309702254631694696108885385614412912856883481678767$ n'est pas premier
+]
+
+#indic[
+  2) Etudier $1+ X^3 + X^5 + X^8 + X^9 + X^18$.
+]
