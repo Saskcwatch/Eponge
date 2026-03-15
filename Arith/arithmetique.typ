@@ -10,9 +10,11 @@
   2. #underline[Fonction de Möbius]:
   Pour $n in NN^*$, on prend:
   $
-    mu(n) := cases(1 &"si" n = 1,
-    0 &"si" n "contient un facteur premier",
-    (-1)^k &"si" n = p_1 dots p_k)
+    mu(n) := cases(
+      1 & "si" n = 1,
+      0 & "si" n "contient un facteur premier",
+      (-1)^k & "si" n = p_1 dots p_k
+    )
   $
 
   La fonction ainsi définis est appelé fonction de Möbius.
@@ -21,10 +23,10 @@
   Pour $p in cal(P)$, $n in NN$, on définis le symbole de Legendre $(n/p)$ par:
   $
     (n/p) := cases(
-      0 &"si" n eq.triple 0 [p],
-      1 &"si" p divides.not n "et" exists k in NN\, n eq.triple k^2 [p],
-      -1 &"sinon"
-    ) 
+      0 & "si" n eq.triple 0 [p],
+      1 & "si" p divides.not n "et" exists k in NN\, n eq.triple k^2 [p],
+      -1 & "sinon"
+    )
   $
 
   Si $(n/p) = 1$, on dit que $n$ est un résidu quadratique modulo $p$.
@@ -51,11 +53,11 @@
 
   2) Soit $f, g in cal(F)(NN^*, CC)$. Montrer que les deux conditions suivantes sont équivalentes:
   $
-    (i) quad &forall n in NN^*, quad f(n) = sum_(d divides n) g(d) \
-    (i i) quad &forall n in NN^*, quad g(n) = sum_(d divides n) mu(d) f(n/d)
+      (i) quad & forall n in NN^*, quad f(n) = sum_(d divides n) g(d) \
+    (i i) quad & forall n in NN^*, quad g(n) = sum_(d divides n) mu(d) f(n/d)
   $
 
-  3) Montrer que $id_(NN^*)$ et $phi$ vérifie les relations. 
+  3) Montrer que $id_(NN^*)$ et $phi$ vérifie les relations.
 ]
 
 === Determinant arithmétique - $gorilla$
@@ -76,9 +78,9 @@
 #correction[
   On a que, pour $(i, j) in eintl 1, n eintr^2$:
   $
-    i and j &= sum_(d divides (i and j)) phi(d) \
-    &= sum_(d divides i, d divides j) phi(d) \
-    &= sum_(d= 1)^n phi(d) delta_(d divides i) delta_(d divides j)
+    i and j & = sum_(d divides (i and j)) phi(d) \
+            & = sum_(d divides i, d divides j) phi(d) \
+            & = sum_(d= 1)^n phi(d) delta_(d divides i) delta_(d divides j)
   $
 
 
@@ -105,38 +107,38 @@
 
 #question[On prend $p in cal(P), p != 2$.
 
-1) Soit $n, m in NN$ tels que $p divides.not n, m$, en notant $(dot/dot)$ le symbole de Legendre définis plus haut, montrer que:
-$
-  ((n m)/p) = (n/p)(m/p) \
-  (n/p) eq.triple  n^((p-1)/2) [p]
-$
+  1) Soit $n, m in NN$ tels que $p divides.not n, m$, en notant $(dot/dot)$ le symbole de Legendre définis plus haut, montrer que:
+  $
+    ((n m)/p) = (n/p)(m/p) \
+    (n/p) eq.triple n^((p-1)/2) [p]
+  $
 
-2) On note, pour $xi in CC$, $ZZ[xi]$ le plus petit sous anneau $A$ de $CC$ (pour l'inclusion) vérifiant:
-$
-  ZZ subset A \
-  xi in A
-$
+  2) On note, pour $xi in CC$, $ZZ[xi]$ le plus petit sous anneau $A$ de $CC$ (pour l'inclusion) vérifiant:
+  $
+    ZZ subset A \
+    xi in A
+  $
 
-On définis de plus la relation $cal(R)$ sur $ZZ[xi]$ par:
-$
-  x cal(R) y <=> exists lambda in ZZ[xi], x-y = lambda p
-$
+  On définis de plus la relation $cal(R)$ sur $ZZ[xi]$ par:
+  $
+    x cal(R) y <=> exists lambda in ZZ[xi], x-y = lambda p
+  $
 
-Montrer que $cal(R)$ est une relation d'équivalence sur $ZZ[xi]$ et que si l'on note $ZZ[xi]\/angle.l p angle.r$ l'ensemble des classes d'équivalence,
-$ZZ[xi]\/angle.l p angle.r$ hérite de la structure d'anneau de $ZZ[xi]$.
-\ \
-3) On prend $p > 3$. On considère $ZZ[j]\/angle.l p angle.r$ et $a = j - j^2$.
+  Montrer que $cal(R)$ est une relation d'équivalence sur $ZZ[xi]$ et que si l'on note $ZZ[xi]\/angle.l p angle.r$ l'ensemble des classes d'équivalence,
+  $ZZ[xi]\/angle.l p angle.r$ hérite de la structure d'anneau de $ZZ[xi]$.
+  \ \
+  3) On prend $p > 3$. On considère $ZZ[j]\/angle.l p angle.r$ et $a = j - j^2$.
 
-+ En regardant $a^2$, montrer que $-3$ est un résidus quadratique modulo $p$ ssi $a^p = a$ dans $ZZ[j]\/ angle.l p angle.r$. 
+  + En regardant $a^2$, montrer que $-3$ est un résidus quadratique modulo $p$ ssi $a^p = a$ dans $ZZ[j]\/ angle.l p angle.r$.
 
-+ En déduire que $3$ est un résidus quadratique modulo $p$ ssi $p eq.triple plus.minus 1 [12]$.
+  + En déduire que $3$ est un résidus quadratique modulo $p$ ssi $p eq.triple plus.minus 1 [12]$.
 
-4) En posant $zeta = e^(i pi/4)$, par la même méthode que la question précédente et en considérant $ZZ[zeta]\/angle.l p angle.r$ et $a = zeta + zeta^(-1)$ montrer que
-$2$ est un résidus quadratique modulo $p$ ssi $p eq.triple plus.minus 1 [8]$
+  4) En posant $zeta = e^(i pi/4)$, par la même méthode que la question précédente et en considérant $ZZ[zeta]\/angle.l p angle.r$ et $a = zeta + zeta^(-1)$ montrer que
+  $2$ est un résidus quadratique modulo $p$ ssi $p eq.triple plus.minus 1 [8]$
 ]
 
 #indic[
-  1) Vérifier que $cal(C) = {x^2 | x in FF_p ^*}$ est un sous groupe de $FF_p ^*$ et en calculer son cardinal.
+  1) Vérifier que $cal(C) = {x^2 | x in FF_p^*}$ est un sous groupe de $FF_p^*$ et en calculer son cardinal.
 
   2) L'écrire
 
@@ -152,15 +154,15 @@ $2$ est un résidus quadratique modulo $p$ ssi $p eq.triple plus.minus 1 [8]$
   On souhaite montrer la loi de réciprocité quadratique qui stipule que:
   $
     (p/q)(q/p) = (-1)^(((p-1)(q-1))/4)
-  $ 
+  $
 
   On considère dans la suite $zeta = e^(i (2 pi)/p)$.
 
-\ \
+  \ \
   On prend de plus:
   $
-    G: ZZ &earrow ZZ[zeta] \
-        x &asarrow sum_(k = 0)^(p - 1) (k/p) zeta^(x k)
+    G: ZZ & earrow ZZ[zeta] \
+        x & asarrow sum_(k = 0)^(p - 1) (k/p) zeta^(x k)
   $
 
   1) Montrer que pour $a in ZZ$,
@@ -180,25 +182,23 @@ $2$ est un résidus quadratique modulo $p$ ssi $p eq.triple plus.minus 1 [8]$
 === Petit pas - $hammer / ram$
 
 #question[
-  Soit $f,g in QQ[X]$ tels que $f(QQ) = g(QQ)$. Montrer que $deg(f) = deg(g)$.  
+  Soit $f,g in QQ[X]$ tels que $f(QQ) = g(QQ)$. Montrer que $deg(f) = deg(g)$.
 ]
 
 === La meilleur classe - $mushroom monkey$
 
 #question[
   1) Soit $n in NN^*$. On note $d_0, ..., d_(n-1) in NN$ et
-  $
-    P := sum_(i = 0)^(n-1) X^(d_i) 
-  $.
+  $ P := sum_(i = 0)^(n-1) X^(d_i) $.
 
   Montrer que $1 + X + ... + X^(n-1)$ divise $P$ ssi:
   $
-  {overline(d_0), ..., overline(d_(n-1))} = ZZ_n
-  $ 
+    {overline(d_0), ..., overline(d_(n-1))} = ZZ_n
+  $
 
   2) Montrer que $507309702254631694696108885385614412912856883481678767$ n'est pas premier
 ]
 
 #indic[
-  2) Etudier $1+ X^3 + X^5 + X^8 + X^9 + X^18$.
+  2) Etudier $1 + X^3 + X^5 + X^8 + X^9 + X^13 + X^18$.
 ]
