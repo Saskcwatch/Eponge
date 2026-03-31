@@ -90,22 +90,23 @@
 
 
 
-=== Merci Alain - $hammer$
+=== Merci Alain - $gorilla$
 
 #question[
   On pose $P = X^5 + X^4 - 4 X^3 - 3 X^2 + 3 X + 1$.
 
-  + Montrer que $P$ est irréductible dans $QQ[X]$
+  
+  1) Montrer que $P$ est irréductible dans $QQ[X]$
 
-  + Montrer que $P$ est scindé simple sur $RR$.
+  2) Montrer que $P$ est scindé simple sur $RR$.
 
-  + On note $x_1 < dots.c < x_5$ ses racines. A-t-on $x_5 = 4 x_3^2 + 2 x_4^2$ ?
+  3) On note $x_1 < dots.c < x_5$ ses racines. A-t-on $x_5 = 4 x_3^2 + 2 x_4^2$ ?
 ]
 
 #indic[
-  + Réfléchir dans un corps fini.
+  1) Réfléchir dans un corps fini.
 
-  + .
+  2) .
 
-  + Galois viendra à votre secours.
+  3) Galois viendra à votre secours.
 ]

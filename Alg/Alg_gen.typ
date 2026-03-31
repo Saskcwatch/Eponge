@@ -323,3 +323,17 @@
   Comme $a_i != 0$, $2 = 0$ dans $KK$ puis $KK$ est de caractéristique $2$.
   #align(right, $square.filled$)
 ]
+
+=== - $gorilla$
+
+#question[
+
+  Soit $n >= 1$, $p in cal(P)$ et $G$ un $p$-sous-groupe fini de $GL_n (ZZ)$ (i.e. $|G| = p^r$ pour un certain $r in NN$).
+
+  Montrer que $|G| <= 4^n$
+  
+]
+
+#indic[
+  Faire Math A 2021.
+]
