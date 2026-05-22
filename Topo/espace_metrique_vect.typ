@@ -14,7 +14,7 @@
 === Bordisme - $mushroom$
 
 #question[
-  Soit $E$ un espace vectoriel normé et $F$ un fermé de $E$ tel que $"Fr" F$ est connexe par arcs. Montrer que $F$ est connexe par arcs.
+  Soit $E$ un espace vectoriel normé et $F$ un fermé de $E$ tel que $partial F$ est connexe par arcs. Montrer que $F$ est connexe par arcs.
 ]
 
 === Gruyère monolithique - $mushroom$
@@ -44,4 +44,19 @@
   1) Montre que $GL_n (CC)$ est un ouvert connexe par arcs.
 
   2) Soit $r in RR_+ ^*$ tel que $cal(B)(I_n, r) subset.eq GL_n (CC)$. Montrer que $angle.l cal(B)(I_n, r) angle.r = GL_n (CC)$ (On regarde le groupe multiplicatif engendré).
+]
+
+=== Gonfler une patate - $mushroom$
+
+#question[
+  On note $(E, ||dot||)$ un $RR$-evn de dimension $n in NN^*$ et $K subset.eq E$ un kompact convexe d'intérieur non vide.
+
+  1) Montrer que $K$ est homéomorphe à $overline(cal(B))(0, 1)$.
+
+  2) On suppose de plus que $K$ est symétrique (i.e. si $x in K$ alors $-x in K$). Montrer que l'on dispose d'une norme $cal(N)$ sur $E$ tel que la boule unité fermée de $(E, cal(N))$ soit $K$.
+
+]
+
+#indic[
+  1) On commence par translater $K$ de sorte à ce que $0 in accent(K, circle)$ puis on s'intérrèsse à l'application $J: E earrow R_+$ définis par $J(x) = inf{lambda in R_+ ^* | x in lambda K}$ 
 ]

@@ -202,3 +202,20 @@
 #indic[
   2) Etudier $1 + X^3 + X^5 + X^8 + X^9 + X^13 + X^18$.
 ]
+
+=== - $mushroom$
+
+#question[
+  1) Soient $A in cal(M)_n (ZZ)$ et $p in cal(P)$. Montrer que:
+  $
+    tr(A^p) eq.triple tr(A) [p]
+  $
+
+  2) On définis la suite $(u_n)_n$ comme suit:
+  $
+    u_0 = 4 quad u_1 = u_2 = 0 quad u_3 = 3 \
+    forall n in NN, u_(n+4) = u_(n+1) + u_n
+  $
+
+  Montrer que, pour tout $p in cal(P)$, $p | u_p$
+]
