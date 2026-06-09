@@ -18,6 +18,27 @@
 #let emptyset = $diameter$
 #let img = $op("Im")$
 #let GL = $op("GL")$
+#let cr = $chevron.r$
+#let cl = $chevron.l$
+#let trans(x) = $attach(#x, tl:t)$
+#let til(x) = $accent(#x, tilde)$
+
+#let lemme(it) = {
+    set par(first-line-indent: 0em)
+    [#smallcaps[_Lemme_]   :  \ #box(inset: (x: 1em, y:0em), width: 100%)[#it]]
+}
+
+#let preuve(it) = {
+    set par(first-line-indent: 0em)
+    [#smallcaps[_Preuve_] : \ #box(inset: (x: 1em, y:0em), width: 100%)[#it]]
+}
+
+#let def(titre, it) = {
+    set par(first-line-indent: 0em)
+    [#smallcaps[_Définition_ ] (#text(style: "italic")[#titre]) :  \ #box(inset: (x: 1em,y:0em), width: 100%)[#it]]
+
+}
+
 
 
 
