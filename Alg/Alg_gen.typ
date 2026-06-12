@@ -337,3 +337,13 @@
 #indic[
   Faire Math A 2021.
 ]
+
+=== Echu eo an heuliañ - $hammer$
+
+#question[
+  Soit $G subset.eq O_n (RR)$ un sous-groupe tel que $T := {"tr"(g) | g in G}$ soit fini. Montrer que $G$ est fini. 
+]
+
+#indic[
+  Faire un absurde, montrer que $overline(G)$ est encore un groupe, $overline(T)$ encore un ensemble fini.
+]
