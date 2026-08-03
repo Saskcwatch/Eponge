@@ -4,7 +4,7 @@
 === Polynômes aléatoires - $ambulance$
 
 #question([On se place dans l'espace préhilbertien $RR[X]$ muni du produit scalaire
-  $ angle.l P, Q angle.r := integral_0^1 P (t) Q(t) dif t $
+  $ chevron.l P, Q chevron.r := integral_0^1 P (t) Q(t) dif t $
 
   On considère une urne remplie initialement d'une boule noire et d'une boule "$0$" et un polynôme $P = 0$.
 
@@ -18,9 +18,9 @@
 
   2) On considère le tirage du polynome $P$. On note $C_k$ la variable aléatoire donnant le coefficient devant $X^k$ dans $P$. Trouver la loi de $C_k$ pour $k in NN$.
 
-  3) Déterminer $EE (angle.l P, Q angle.r )$
+  3) Déterminer $EE (chevron.l P, Q chevron.r )$
 
-  4) Déterminer $VV ( angle.l P, Q angle.r)$
+  4) Déterminer $VV ( chevron.l P, Q chevron.r)$
 ])
 
 === Duel - $mushroom$

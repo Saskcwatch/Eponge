@@ -124,16 +124,16 @@
     x cal(R) y <=> exists lambda in ZZ[xi], x-y = lambda p
   $
 
-  Montrer que $cal(R)$ est une relation d'équivalence sur $ZZ[xi]$ et que si l'on note $ZZ[xi]\/angle.l p angle.r$ l'ensemble des classes d'équivalence,
-  $ZZ[xi]\/angle.l p angle.r$ hérite de la structure d'anneau de $ZZ[xi]$.
+  Montrer que $cal(R)$ est une relation d'équivalence sur $ZZ[xi]$ et que si l'on note $ZZ[xi]\/chevron.l p chevron.r$ l'ensemble des classes d'équivalence,
+  $ZZ[xi]\/chevron.l p chevron.r$ hérite de la structure d'anneau de $ZZ[xi]$.
   \ \
-  3) On prend $p > 3$. On considère $ZZ[j]\/angle.l p angle.r$ et $a = j - j^2$.
+  3) On prend $p > 3$. On considère $ZZ[j]\/chevron.l p chevron.r$ et $a = j - j^2$.
 
-  + En regardant $a^2$, montrer que $-3$ est un résidus quadratique modulo $p$ ssi $a^p = a$ dans $ZZ[j]\/ angle.l p angle.r$.
+  + En regardant $a^2$, montrer que $-3$ est un résidus quadratique modulo $p$ ssi $a^p = a$ dans $ZZ[j]\/ chevron.l p chevron.r$.
 
   + En déduire que $3$ est un résidus quadratique modulo $p$ ssi $p eq.triple plus.minus 1 [12]$.
 
-  4) En posant $zeta = e^(i pi/4)$, par la même méthode que la question précédente et en considérant $ZZ[zeta]\/angle.l p angle.r$ et $a = zeta + zeta^(-1)$ montrer que
+  4) En posant $zeta = e^(i pi/4)$, par la même méthode que la question précédente et en considérant $ZZ[zeta]\/chevron.l p chevron.r$ et $a = zeta + zeta^(-1)$ montrer que
   $2$ est un résidus quadratique modulo $p$ ssi $p eq.triple plus.minus 1 [8]$
 ]
 
@@ -176,7 +176,7 @@
   $
   Exprimer $G(1)^2$
 
-  3) Calculer $G(1)^(q-1)$ dans $ZZ[zeta]\/angle.l q angle.r$ et conclure.
+  3) Calculer $G(1)^(q-1)$ dans $ZZ[zeta]\/chevron.l q chevron.r$ et conclure.
 ]
 
 === Petit pas - $hammer / ram$

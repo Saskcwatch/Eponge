@@ -43,7 +43,7 @@
 
   1) Montre que $GL_n (CC)$ est un ouvert connexe par arcs.
 
-  2) Soit $r in RR_+ ^*$ tel que $cal(B)(I_n, r) subset.eq GL_n (CC)$. Montrer que $angle.l cal(B)(I_n, r) angle.r = GL_n (CC)$ (On regarde le groupe multiplicatif engendré).
+  2) Soit $r in RR_+^*$ tel que $cal(B)(I_n, r) subset.eq GL_n (CC)$. Montrer que $chevron.l cal(B)(I_n, r) chevron.r = GL_n (CC)$ (On regarde le groupe multiplicatif engendré).
 ]
 
 === Gonfler une patate - $mushroom$
@@ -58,5 +58,5 @@
 ]
 
 #indic[
-  1) On commence par translater $K$ de sorte à ce que $0 in accent(K, circle)$ puis on s'intérrèsse à l'application $J: E earrow R_+$ définis par $J(x) = inf{lambda in R_+ ^* | x in lambda K}$ 
+  1) On commence par translater $K$ de sorte à ce que $0 in accent(K, circle)$ puis on s'intérrèsse à l'application $J: E earrow R_+$ définis par $J(x) = inf{lambda in R_+^* | x in lambda K}$
 ]

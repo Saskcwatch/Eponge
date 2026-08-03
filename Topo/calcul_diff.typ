@@ -7,34 +7,34 @@
 
 #question[
   1) Soit $phi$ une forme linéaire non nulle de $RR^n$ dans $RR$. \
-  Trouver les éventuels extrema locaux et globaux de la fonction $f$ définie sur $RR^n$ par 
+  Trouver les éventuels extrema locaux et globaux de la fonction $f$ définie sur $RR^n$ par
   $ f(x) = phi(x) e^(-norm(x)^2) $
 
   \
-  2) Soit $psi$ une forme quadratique sur $RR^n$ (voir Algèbre linéaire). Déterminer les éventuels extrema globaux de la fonction $f$ définie sur $RR^n$ par 
-  $ f(x) = psi (x) e^(- norm(x)^2) $ 
+  2) Soit $psi$ une forme quadratique sur $RR^n$ (voir Algèbre linéaire). Déterminer les éventuels extrema globaux de la fonction $f$ définie sur $RR^n$ par
+  $ f(x) = psi (x) e^(- norm(x)^2) $
 ]
 
 #indic[
-  2) Chercher les points critiques de $f$. 
+  2) Chercher les points critiques de $f$.
   On pourra penser à utiliser les éléments propres de la matrice de la forme bilinéaire associée à $psi$ dans une base orthonormée.
 ]
 
 
 #correction[
   2) On remarque que $f$ est $cal(C)^1$ sur $RR^n$.
-\ Soit $M$ la matrice de la forme bilinéaire associée à $psi$.
-\  On note $g$ la fonction définie sur $RR^n$ par $g(x)= e^(-norm(x)^2)$.
+  \ Soit $M$ la matrice de la forme bilinéaire associée à $psi$.
+  \  On note $g$ la fonction définie sur $RR^n$ par $g(x)= e^(-norm(x)^2)$.
 
   On remarque d'abord que:
   $
     grad psi(x) = 2 M x
   $
 
-  Ainsi, $ grad f(x) =& grad psi (x) times g(x) + psi(x) grad g(x) \ 
-  =& 2 M x times e^(-norm(x)^2) - psi(x) times 2 x e^(-norm(x)^2) \ 
-  =& 2 e^(-norm(x)^2) (M x - psi(x) x) $
-\ \
+  Ainsi, $ grad f(x) = & grad psi (x) times g(x) + psi(x) grad g(x) \
+            = & 2 M x times e^(-norm(x)^2) - psi(x) times 2 x e^(-norm(x)^2) \
+            = & 2 e^(-norm(x)^2) (M x - psi(x) x) $
+  \ \
   #underline[Analyse]: Supposons $x$ un point critique de $f$.
 
   Alors, $M x - psi(x) x = vec(0, dots.v, 0)$
@@ -47,7 +47,7 @@
   \
   De plus, $0$ est un point critique de $f$.
 
-  
+
   \
   \
   Les points critiques qui ne sont pas un vecteur propre unitaire de $M$ sont d'image nulle par $f$.
@@ -57,17 +57,17 @@
   Comme $psi(x)$ est une valeur propre de $M$, cette quantité est maximale quand $psi(x)$ est la plus grande valeur propre $lambda_"max"$ de $M$.
 
   \
-  On distingue deux cas: 
+  On distingue deux cas:
   - si $lambda_max <= 0$, alors $f$ est clairement toujours négative:
   Par le theorème spectral, on a que dans une certaine base orthognormale $underline(e) = (e_1, ..., e_n)$,
   $
-    psi(x) = sum_(k = 1)^n lambda_k angle.l e_k, x angle.r ^2
+    psi(x) = sum_(k = 1)^n lambda_k chevron.l e_k, x chevron.r^2
   $
   Si tous les $lambda_k$ sont négatifs, pour $x in RR^n, psi(x) <= 0$
   Ainsi, dans ce cas là, les maxima sont les points qui annulent $f$.
-  
+
   - si $lambda_max > 0$, alors les points critiques avec une valeur maximale sont les vecteurs propres de $M$ unitaires associés à $lambda_"max"$
-  
+
 
   Montrons que dans ce deuxième cas, $lambda_max / e$ est un maximum global de $f$ :
   \ On a $f(u) limits(stretch(arrow, size: #400%))_(norm(u)->+oo) 0$ \ Donc il existe $R > 0$ tel que pour tout $x in RR^n \\ overline(cal(B)(0_(RR^n), R))$, $f(x) <= lambda_max / 4$
@@ -78,7 +78,7 @@
 
 
   \
-  \ 
+  \
   Finalement, $f$ admet toujours une valeur maximale, qui vaut $max(0, lambda_max / e)$.
   Les maxima globaux sont :
   - les vecteurs propres unitaires de $M$ associés à $lambda_max$ si $lambda_max > 0$
