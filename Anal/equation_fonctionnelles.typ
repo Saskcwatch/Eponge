@@ -4,15 +4,15 @@
 === Pour bien commencer - $chocolate$
 
 #question[
-  Déterminer toutes les fonctions $f$ définies sur $RR$ telles que 
+  Déterminer toutes les fonctions $f$ définies sur $RR$ telles que
   $ forall x in RR, f(f(x)) + x f(x) = 1 $
 ]
 
 #indic[
   On pourra s'intéresser à la valeur en $0$.
 ]
-  
-===  Fonctionellement dense - $chocolate$
+
+=== Fonctionellement dense - $chocolate$
 
 #question[
   Déterminer toutes les fonctions $f$ continues sur $RR$ telles que
@@ -24,7 +24,7 @@
   Par analyse synthèse:
 
   *Analyse*
-  
+
   On commence par évaluer en $(x,y) = (0,0)$ ce qui nous donne $f(0) = 0$. On peut étudier l'équation pour $y = 0$ et on trouve l'équation :
   $ f(x) = 2 f(-x^2) quad quad (*) $
 
@@ -46,15 +46,15 @@
   Donc par continuité de $f$: $ forall x in RR, f(x) = 0 $.
 
   *Synthèse* ok
-  
-  
+
+
 ]
 
 
 === Une équation symétrique ? - $mushroom$
 
 #question[
-  Déterminer toutes les fonctions de classe $cal(C)^2$ sur $[0, 1]$ à valeurs dans $RR$ telles que 
+  Déterminer toutes les fonctions de classe $cal(C)^2$ sur $[0, 1]$ à valeurs dans $RR$ telles que
   $ forall x in [0, 1], f(x) = 2 f(x/2) + 2 f(1 - x/2) $
 ]
 
@@ -79,7 +79,7 @@
 === $f^2 = f^2$ - $chocolate$
 
 #question[
-  1) Trouver toutes les fonctions $f in cal^1 (RR)$ tels que $f compose f = f times f$.
+  1) Trouver toutes les fonctions $f in cal(C)^1 (RR)$ tels que $f compose f = f times f$.
 
-  2) $ambulance$ Pareil mais en ne supposant plus que $f$ continue.
+  2) $ambulance$ Même chose pour $f in cal(C)^0 (RR)$.
 ]
